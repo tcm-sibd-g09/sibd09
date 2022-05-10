@@ -1,12 +1,12 @@
 # Relatório de Especificação da Informação
 
-# Rent Beach
+# InstantCar
 
-Projeto desenvolvido pelos alunos Lucas Baptista (36555), Kevin Bastos (38120), Rúben Novais (38524), Wilson Oliveira (37810) da equipa SIBD07.
+Projeto desenvolvido pelos alunos João Vilas Boas (35797), Ricardo Ferreira (38373), Tiago Monteiro (38338) da equipa SIBD09.
 
 ## Descrição do trabalho
 
-Neste trabalho pretendemos melhorar o sistema de uma empresa de aluguer de artigos de praia, para uma melhor organização e dinâmica da mesma.
+Neste trabalho temos como objetivo solucionar o problema da empresa InstantCar, uma empresa do ramo de mobilidade e transportes, que disponibiliza aos seus clientes soluções de aluguer de veículos, ou aluguer de serviços relacionados com transportes (pessoas e mercadoria).
 
 
 ## Reports
@@ -14,7 +14,6 @@ Neste trabalho pretendemos melhorar o sistema de uma empresa de aluguer de artig
 :[REI](doc/rei/rei00.md)
 
 ## Team
-* Lucas Baptista [@LucasBaptista](https://github.com/marcoamarooliveira)
-* Kevin Bastos [@KevinBastos](https://github.com/kevinbastos07)
-* Rúben Novais [@RubenNovais](https://github.com/marcoamarooliveira)
-* Wilson Oliveira [@WilsonOliveira](https://github.com/marcoamarooliveira)
+* João Vilas Boas [@jp1906](https://github.com/jp1906)
+* Ricardo Ferreira [@Rikinhas11](https://github.com/Rikinhas11)
+* Tiago Monteiro [@TiagoMonteiro10](https://github.com/TiagoMonteiro10)
