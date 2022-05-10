@@ -27,6 +27,8 @@ TrabalhaNuma (empregado, filial) N:1
 
 Aluga (Cliente, tipo de serviço) 1:1
 
+
+
 DIAGRAMA 
 
 ![Diagrama1](https://user-images.githubusercontent.com/96230913/167732984-ce8fa777-20d0-4186-9b21-fa169d507ae3.jpeg)
