@@ -6,13 +6,12 @@
 :[Especificação de Requisitos](rei02.md)  
 :[Esquema Conceptual](rei03.md)  
 
-## Group _07_
+## Group _09_
 
 
-* Lucas Baptista [@LucasBaptista](https://github.com/Ziimaz)
-* Kevin Bastos [@KevinBastos](https://github.com/kevinbastos07)
-* Rúben Novais [@RubenNovais](https://github.com/r5b2n)
-* Wilson Oliveira [@WilsonOliveira](https://github.com/wilsonoliveira01)
+* João Vilas Boas [@jp1906](https://github.com/jp1906)
+* Ricardo Ferreira [@Rikinhas11](https://github.com/Rikinhas11)
+* Tiago Monteiro [@TiagoMonteiro10](https://github.com/TiagoMonteiro10)
 
 ---
 
