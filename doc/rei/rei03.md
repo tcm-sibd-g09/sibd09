@@ -3,6 +3,7 @@
 ## Modelo E/A
 
 Entidades:
+
 Departamento (tipo de serviço, gerente, localização)
 
 Filial (número, gerente, localização (cidade, rua), nº de empregados)
@@ -18,19 +19,20 @@ Cliente (Nome (Primeiro e Ultimo), número do CC, carta de condução, email, n�
 
 Associações:
 
-Pertence (empregado, departamento) N-1
+Pertence (empregado, departamento) N:1
 
-TrabalhaNuma (empregado, filial) N-1
+TrabalhaNuma (empregado, filial) N:1
 
 
 
-Aluga (Cliente, tipo de serviço) 1-1
+Aluga (Cliente, tipo de serviço) 1:1
+
+DIAGRAMA 
 
 ![Diagrama1](https://user-images.githubusercontent.com/96230913/167732984-ce8fa777-20d0-4186-9b21-fa169d507ae3.jpeg)
-Exemplo de inserção de uma imagem:   
-![An alternative description](images/)   
+ 
 
-Always add a description to help the user understand the figure 
+
 
 NOTA: Cada entidade-tipo e cada associação devem ter um pequeno texto – um ou dois parágrafos – para descrever esse elemento do modelo e os seus atributos)
 
