@@ -1,7 +1,19 @@
 # C3 : Esquema conceptual
 
 ## Modelo E/A
-_(Introduzir as entidade-tipo e associações do sistema, adicionalmente apresentar o diagrama do modelo Entidade-Associação.)_
+
+Entidades:
+Departamento (tipo de serviço, gerente, localização)
+Filial (número, gerente, localização (cidade, rua), nº de empregados)
+Serviço aluguer de carros (caução, tipo de veiculo, a marca, o local, o nº de dias, valor a pagar, data inicial e data final)
+Serviço de transporte (valor fixo, tipo de veiculo, o tipo de transporte, inicio e fim do serviço, o valor a pagar)
+Empregado (Nome (Primeiro e Ultimo), número CC, endereço, salário, sexo, data de nascimento)
+Cliente (Nome (Primeiro e Ultimo), número do CC, carta de condução, email, nº de telefone)
+
+Associações:
+Pertence (empregado, departamento) N-1
+TrabalhaNuma (empregado, filial) N-1
+Aluga (Cliente, tipo de serviço) 1-1
 
 Exemplo de inserção de uma imagem:   
 ![An alternative description](images/image02.png)   
