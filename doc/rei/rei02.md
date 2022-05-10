@@ -1,8 +1,9 @@
 # C2 : Especificação de Requisitos
 
-As opções disponíveis no sistema Rent Beach dependerão da quantidade de artigos alugados.
+A empresa InstantCar oferece aos seus clientes a possibilidade de alugar um veículo, bem como a possibilidade de requisitar um serviço.
 
-Assim, os funcionários poderão ter acesso às seguintes funcionalidades: Saber a quantidade de artigos em stock, ter acesso aos artigos disponíveis, ter acesso ao tempo de aluguer do artigo, ter acesso aos dados do cliente.
+Dentro de cada departamento, os funcionários terão acesso: aos dados do cliente, tipo de serviço requisitado pelo cliente, tipo de veículo, veículos em stock e ao número
+de dias de requisição.
 
 _(Descrever os tipos de utilizadores (actores) do sistema de informação e as funcionalidade (casos de uso) a que estes terão acesso)_
 
