@@ -8,7 +8,7 @@
 :[Esquema Relacional](rebd04.md)  
 :[SQL](rebd05.md)  
 
-## Group _xx_
+## Group _09_
 
 _(Don't forget to add the group elements)_
 
