@@ -10,10 +10,11 @@
 
 ## Group _09_
 
-_(Don't forget to add the group elements)_
+* João Vilas Boas [@jp1906](https://github.com/jp1906)
+* Ricardo Ferreira [@Rikinhas11](https://github.com/Rikinhas11)
+* Tiago Monteiro [@TiagoMonteiro10](https://github.com/TiagoMonteiro10)
 
-* Marco Amaro Oliveira [@MarcoOliveira](https://github.com/marcoamarooliveira)
-* Other team members
+
 
 ---
 _You can add a footer menu for navigation_ 
