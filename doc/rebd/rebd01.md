@@ -2,8 +2,9 @@
 
 
 ## Descrição do trabalho
-O trabalho consiste na especificação e desenvolvimento de um sistema …  
-_(Relembrar a descrição do trabalho apresentada no REI, utilizando linguagem natural. Esta secção permite introduzir detalhes não apresentados no relatório anterior. Inserir nesta secção os pressupostos utilizados na modelação.)_
+
+Neste trabalho temos como objetivo solucionar o problema da empresa InstantCar, uma empresa do ramo de mobilidade e transportes, que disponibiliza aos seus clientes soluções de aluguer de veículos, ou aluguer de serviços relacionados com transportes (pessoas e mercadoria).
+
 
 ## Descrição dos requisitos do utilizador
 
