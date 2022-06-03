@@ -22,19 +22,19 @@ CLIENTE (Nome (Primeiro e Ultimo), número do CC, carta de condução, email, n�
 
 Associações:
 
-Levantar (ALUGAR, FILIAL) N:1 
+Levantar (ALUGAR, FILIAL) N:1 P/P
 
-Trabalha (FILIAL, FUNCIONÁRIO) 1:N
+Trabalha (FILIAL, FUNCIONÁRIO) 1:N P/T
 
-Entregar (ALUGAR, FILIAL) N:1
+Entregar (ALUGAR, FILIAL) N:1 P/P
 
-Estacionado (VEICULO, FILIAL) N:1
+Estacionado (VEICULO, FILIAL) N:1 P/T
 
-Escolha (VEICULO, TIPOVEICULO) N:1
+Escolha (VEICULO, TIPOVEICULO) N:1 T/P
 
-TipoDeServiço(ALUGAR, SERVIÇO)
+TipoDeServiço(ALUGAR, SERVIÇO) P/P
 
-TrabalhaEm (DEPARTAMENTO, FUNCIONÁRIO) 1:N
+TrabalhaEm (DEPARTAMENTO, FUNCIONÁRIO) 1:N P/T
 
 DIAGRAMA 
 
