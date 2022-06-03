@@ -4,7 +4,7 @@
 
 Entidades:
 
-Departamento (tipo de serviço, gerente, localização)
+Departamento 
 
 Filial (número, gerente, localização (cidade, rua), nº de empregados)
 
