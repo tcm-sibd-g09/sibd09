@@ -17,7 +17,9 @@ Cada cliente necessita de indicar o nome (primeiro e último), número de CC, a 
 
 ## Descrição dos requisitos do utilizador
 
-_(Descrever os tipos de utilizadores (actores) do sistema de informação e as funcionalidade (casos de uso) a que estes terão acesso. Permite refinar os requisitos apresentados no REI.)_
+O gerente vai ser quem gere o stock de veiculos podendo adicionar/remover a quantidade de veiculos disponiveis.  
+
+E a disponibilidade de agenda do seu departamento podendo alterar o seu estado.
 
 
 ---
