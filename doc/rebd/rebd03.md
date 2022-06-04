@@ -1,6 +1,8 @@
 # C3 : Normalização
 
-## Relações
+## Conversão do Modelo EA para Modelo Relacional
+
+### Passo 1: Entidades e Atributos
 
 Cliente (_nic, telefone, email, cartaconducao, nome (primeiro, ultimo)
 
@@ -18,11 +20,10 @@ Veiculo (_matricula, marca, modelo, stock)
 
 Serviço (_idserviço, valor, ndias)
 
-### Ligações 1:1
-
+### Passo 2: Associações 1:1
 Não existe ligações 1:1
 
-### Ligações 1:N
+#### Passo 3: Associações 1:N
 
 Cliente (_nic, telefone, email, cartaconducao, nome (primeiro, ultimo))
 
@@ -40,11 +41,70 @@ Veiculo (_matricula, marca, modelo, stock, #Código->TipoDeVeiculo)
 
 Serviço (_idserviço, valor, ndias)
 
-### Ligações M:N
 
-Não existe ligações M:N
+### Passo 4: Associações N:M
 
-### 1ºForma Normal 1ºParte (Compostos - atributos)
+Não existem ligações N:M
+
+### Passo 5: Atributo Multivalor
+
+Não existe Atributos Multivalor
+
+### Passo 6: Associação ternária
+
+Não existe associações ternárias
+
+### Passo 7: Entidades Fracas
+
+Não existe Entidades Fracas
+
+
+## Relações
+
+|Cliente|    |      |   |         |                   |
+|-----------|----|------|---|---------|-------------------|
+|_nic      |PrimeiroNome|UltimoNome|CartaCondução|telefone|Email|
+
+|Alugar    |            |        |        |        |         |         |     |       |
+|-------------|------------|------|-----|-----|----|-----|---------|---------|
+|_Código|DataInicial|DataFinal|Custo|Caução|#nic->Cliente|#idserviço->serviço|#matricula->veiculo|#numero->Filial
+
+|Filial    |    |                 |                    |
+|---------|----|-----------------|--------------------|
+|_numero|rua|#_códigopostal->CódigoPostais|porta|
+
+|TipoVeiculo   |       |          |      
+|----------|-------|----------|
+|_Código|nome|ValorHora|
+
+|Funcionário  |         |          |         |                        |           |       |
+|---------|---------|----------|---------|------------------------|-----------|--------|
+|_nic|endereço|dn|sexo|PrimeiroNome|UltimoNome|Salário|#Código->Departamento|#numero->Filial
+
+|Departamento|    |         |         |
+|----------|----|---------|---------|
+|_código      |rua|porta|#Códigopostal->CódigoPostais|
+
+
+|Veiculo|    |           |        |
+|-------|----|-----------|--------|
+|_matricula|stock|#modelo->Modelos|#Código->TipoDeVeiculo|
+
+|Serviço    |        |       |  
+|------------|--------|-------|
+|_idserviço|valor|ndias|
+
+
+|CódigoPostais         |                        |
+|-------------------|------------------------|
+|_CódigoPostal|Localidade|
+
+|Modelos                |                 |        
+|----------------------|-----------------|
+|_Modelo|marca|
+
+
+## 1ºForma Normal 1ºParte (Compostos - atributos)
 
 Cliente (_nic, telefone, email, cartaconducao, PrimeiroNome, UltimoNome)
 
@@ -62,15 +122,15 @@ Veiculo (_matricula, marca, modelo, stock, #Código->TipoDeVeiculo)
 
 Serviço (_idserviço, valor, ndias)
 
-### 1ºForma Normal 2ºParte (atributos multivalor)
+## 1ºForma Normal 2ºParte (atributos multivalor)
 
 Não existem alterações 
 
-### 2ºForma Normal
+## 2ºForma Normal
 
 Já está, pois não existem ligações M:N
 
-### 3ºForma Normal 
+## 3ºForma Normal 
 
 Cliente (_nic, telefone, email, cartaconducao, PrimeiroNome, UltimoNome)
 
@@ -92,7 +152,7 @@ CódigoPostais (_CódigoPostal, localidade)
 
 Modelos (_Modelo, marca)
 
-### Forma Normal de Boyce-Codd 
+## Forma Normal de Boyce-Codd 
 
 Cliente (_nic, telefone, email, cartaconducao, PrimeiroNome, UltimoNome)
 
@@ -114,7 +174,7 @@ CódigoPostais (_CódigoPostal, localidade)
 
 Modelos (_Modelo, marca)
 
-### 4ºForma Normal 
+## 4ºForma Normal 
 
 Não eixste alterações
 
