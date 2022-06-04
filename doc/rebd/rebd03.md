@@ -104,6 +104,8 @@ Não existe Entidades Fracas
 |_Modelo|marca|
 
 
+## Normalização do Esquema Relacional
+
 ## 1ºForma Normal 1ºParte (Compostos - atributos)
 
 Cliente (_nic, telefone, email, cartaconducao, PrimeiroNome, UltimoNome)
@@ -177,9 +179,6 @@ Modelos (_Modelo, marca)
 ## 4ºForma Normal 
 
 Não eixste alterações
-
-## Normalização do Esquema Relacional
-_(Apresentar o estudo da normalização das relações obtidas na secção anterior. Desnormalizar se necessário.)_
 
 ---
 [< Previous](rebd02.md) | [^ Main](https://github.com/exemploTrabalho/reportSIBD/) | [Next >](rebd04.md)
