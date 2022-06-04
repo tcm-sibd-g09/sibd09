@@ -3,22 +3,21 @@
 ## Modelo E/A
 Entidades:
 
-DEPARTAMENTO 
+CLIENTE (_nic, telefone, email, cartaconducao, nome (primeiro, ultimo)
 
-FILIAL (_número,localização (cidade, rua))
+ALUGAR (_código, datainicial, datafinal, custo, caução)
 
-ALUGAR (_Código, Caução, Custo, DataFinal, DataInicial)
+FILIAL (_numero, localização(código postal, localidade, rua, porta)
 
-VEICULO
+FUNCIONÁRIO (_nic, endereço, dn, sexo, nome(primerio, ultimo), salário)
 
-SERVIÇO
+TIPOVEICULO(_Código, nome, valorHora)
 
-TIPOVEICULO (Código, Nome)
+DEPARTAMENTO (_código, Localização(código postal, localidade, rua, porta))
 
-FUNCIONÁRIO (Nome (Primeiro e Ultimo), _número CC, endereço, salário, sexo, data de nascimento)
+VEICULO (_matricula, marca, modelo, stock)
 
-CLIENTE (Nome (Primeiro e Ultimo), número do CC, carta de condução, email, nº de telefone)
-
+SERVIÇO (_idserviço, valor, ndias)
 
 Associações:
 
@@ -38,7 +37,8 @@ TrabalhaEm (DEPARTAMENTO, FUNCIONÁRIO) 1:N P/T
 
 DIAGRAMA 
 
- ![Diagrama1](https://user-images.githubusercontent.com/96230913/171955084-6d0b55c6-be83-45d4-86d6-e53636172a87.png)
+
+![InstantCar](https://user-images.githubusercontent.com/96230913/171990586-d2a8e846-5ca0-48f8-aa52-f9a130ccedce.png)
 
 
 
