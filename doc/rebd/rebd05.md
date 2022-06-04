@@ -160,6 +160,11 @@ CREATE TABLE IF NOT EXISTS `Modelos` (
   
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_bin;
 
+SET SQL_MODE=@OLD_SQL_MODE;
+
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
 SET FOREIGN_KEY_CHECKS=1;
 COMMIT;
@@ -170,6 +175,29 @@ COMMIT;
 
 ![TabelaFuncionário](https://user-images.githubusercontent.com/96230913/171994002-0e521eea-a3b4-4a1f-a067-b132a630d61d.png)
 
+#### Mencione o nome do funcionário com o número Id 10:
+
+SELECT nome
+
+FROM Funcionarios
+
+WHERE Id= “10”
+
+#### Mencione todos os funcionários da filial Porto:
+
+SELECT nome
+
+FROM funcionarios
+
+Where Filial= “Porto”
+
+#### Mencione os funcionários com a função gerente:
+
+SELECT nome
+
+FROM funcionarios
+
+WHERE Função= "Gerente
 
 ---
 [< Previous](rebd04.md) | [^ Main](https://github.com/exemploTrabalho/reportSIBD/) | Next >
