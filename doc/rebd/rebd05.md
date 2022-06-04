@@ -197,7 +197,7 @@ SELECT nome
 
 FROM funcionarios
 
-WHERE Função= "Gerente
+WHERE Função= "Gerente"
 
 ---
 [< Previous](rebd04.md) | [^ Main](https://github.com/exemploTrabalho/reportSIBD/) | Next >
