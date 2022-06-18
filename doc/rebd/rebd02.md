@@ -3,21 +3,21 @@
 ## Modelo E/A
 Entidades:
 
-CLIENTE ( <ins>nic</ins> , telefone, email, cartaconducao, nome (primeiro, ultimo)
+CLIENTE (<ins>nic</ins>, telefone, email, cartaconducao, nome (primeiro, ultimo))
 
-ALUGAR (_código, datainicial, datafinal, custo, caução)
+ALUGAR (<ins>código</ins>, datainicial, datafinal, custo, caução)
 
-FILIAL (_numero, localização(código postal, localidade, rua, porta)
+FILIAL (<ins>numero</ins>, localização(código postal, localidade, rua, porta)
 
-FUNCIONÁRIO (_nic, endereço, dn, sexo, nome(primerio, ultimo), salário)
+FUNCIONÁRIO (<ins>nic</ins>, endereço, dn, sexo, nome(primerio, ultimo), salário)
 
-TIPOVEICULO(_Código, nome, valorHora)
+TIPOVEICULO(<ins>Código</ins>, nome, valorHora)
 
-DEPARTAMENTO (_código, Localização(código postal, localidade, rua, porta))
+DEPARTAMENTO (<ins>código</ins>, Localização(código postal, localidade, rua, porta))
 
-VEICULO (_matricula, marca, modelo, stock)
+VEICULO (<ins>matricula</ins>, marca, modelo)
 
-SERVIÇO (_idserviço, valor, ndias)
+SERVIÇO (<ins>idserviço</ins>, valor, ndias)
 
 Associações:
 
@@ -31,7 +31,7 @@ Estacionado (VEICULO, FILIAL) N:1 P/T
 
 Escolha (VEICULO, TIPOVEICULO) N:1 T/P
 
-TipoDeServiço(ALUGAR, SERVIÇO) P/P
+TipoDeServiço(ALUGAR, SERVIÇO) 1:1 P/P
 
 TrabalhaEm (DEPARTAMENTO, FUNCIONÁRIO) 1:N P/T
 
