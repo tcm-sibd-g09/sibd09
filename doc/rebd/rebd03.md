@@ -4,43 +4,46 @@
 
 ### Passo 1: Entidades e Atributos
 
-Cliente (_nic, telefone, email, cartaconducao, nome (primeiro, ultimo)
+Cliente (<ins>nic</ins>, telefone, email, cartaconducao, primeironome, ultimonome)
 
-Alugar (_código, datainicial, datafinal, custo, caução)
+Alugar (<ins>código</ins>, datainicial, datafinal, custo, caução)
 
-Filial (_numero, localização(código postal, localidade, rua, porta)
+Filial (<ins>numero</ins>, localização(código postal, localidade, rua, porta)
 
-Funcionário (_nic, endereço, dn, sexo, nome(primerio, ultimo), salário)
+Funcionário (<ins>nic</ins>, endereço, dn, sexo, primeironome, ultimonome, salário)
 
-TipoVeiculo(_Código, nome, valorHora)
+TipoVeiculo(<ins>Código</ins>, nome, valorHora)
 
-Departamento (_código, Localização(código postal, localidade, rua, porta))
+Departamento (<ins>código</ins>,código postal, localidade, rua, porta)
 
-Veiculo (_matricula, marca, modelo, stock)
+Veiculo (<ins>matricula</ins>, marca, modelo, stock)
 
-Serviço (_idserviço, valor, ndias)
+Serviço (<ins>idserviço</ins>, valor, ndias)
 
 ### Passo 2: Associações 1:1
 Não existe ligações 1:1
 
 #### Passo 3: Associações 1:N
 
-Cliente (_nic, telefone, email, cartaconducao, nome (primeiro, ultimo))
+Cliente (<ins>nic</ins>, telefone, email, cartaconducao, primeironome, ultimonome)
 
-Alugar (_código, datainicial, datafinal, custo, caução, #nic->Cliente, #idserviço->serviço, #matricula->veiculo, #numero->Filial)
+Alugar (<ins>código</ins>, datainicial, datafinal, custo, caução, #nic->Cliente, #idserviço->serviço, #matricula->veiculo, #numero->Filial)
 
-Filial (_numero, localização(rua, cidade))
+Filial (<ins>numero</ins>, rua, porta, localidade, #códigopostal->CódigoPostais)
 
-Funcionário (_nic, endereço, dn, sexo, nome(primerio, ultimo), salário, #Código->Departamento, #numero->Filial)
+Funcionário (<ins>nic</ins>, endereço, dn, sexo, primeironome, ultimonome, salário, #Código->Departamento, #numero->Filial)
 
-TipoVeiculo(_Código, nome, valorHora)
+TipoVeiculo(<ins>Código</ins>, nome, valorHora)
 
-Departamento (_código, Localização)
+Departamento (<ins>código</ins>, rua, porta, localidade, #CódigoPostal->CódigoPostais)
 
-Veiculo (_matricula, marca, modelo, stock, #Código->TipoDeVeiculo)
+Veiculo (<ins>matricula</ins>, #modelo->Modelos, #Código->TipoDeVeiculo)
 
-Serviço (_idserviço, valor, ndias)
+Serviço (<ins>idserviço</ins>, valor, ndias)
 
+CódigoPostais (<ins>CódigoPostal</ins>, localidade)
+
+Modelos (<ins>modelo</ins>, marca)
 
 ### Passo 4: Associações N:M
 
@@ -63,45 +66,44 @@ Não existe Entidades Fracas
 
 |Cliente|    |      |   |         |                   |
 |-----------|----|------|---|---------|-------------------|
-|_nic      |PrimeiroNome|UltimoNome|CartaCondução|telefone|Email|
+|<ins>nic</ins>      |PrimeiroNome|UltimoNome|CartaCondução|telefone|Email|
 
 |Alugar    |            |        |        |        |         |         |     |       |
 |-------------|------------|------|-----|-----|----|-----|---------|---------|
-|_Código|DataInicial|DataFinal|Custo|Caução|#nic->Cliente|#idserviço->serviço|#matricula->veiculo|#numero->Filial
+|<ins>Código</ins>|DataInicial|DataFinal|Custo|Caução|#nic->Cliente|#idserviço->serviço|#matricula->veiculo|#numero->Filial|
 
-|Filial    |    |                 |                    |
-|---------|----|-----------------|--------------------|
-|_numero|rua|#_códigopostal->CódigoPostais|porta|
+|Filial    |    |                 |                    |        |
+|---------|----|-----------------|--------------------|-----------|
+|<ins>numero</ins>|rua|#_códigopostal->CódigoPostais|porta|localidade|
 
 |TipoVeiculo   |       |          |      
 |----------|-------|----------|
-|_Código|nome|ValorHora|
+|<ins>Código</ins>|nome|ValorHora|
 
 |Funcionário  |         |          |         |                        |           |       |
 |---------|---------|----------|---------|------------------------|-----------|--------|
-|_nic|endereço|dn|sexo|PrimeiroNome|UltimoNome|Salário|#Código->Departamento|#numero->Filial
-
-|Departamento|    |         |         |
-|----------|----|---------|---------|
-|_código      |rua|porta|#Códigopostal->CódigoPostais|
+|<ins>nic</ins>|endereço|dn|sexo|PrimeiroNome|UltimoNome|Salário|#Código->Departamento|#numero->Filial|
+|Departamento|    |         |         |         |
+|----------|----|---------|---------|----------|
+|<ins>código</ins>      |rua|porta|#Códigopostal->CódigoPostais|localidade|
 
 
 |Veiculo|    |           |        |
 |-------|----|-----------|--------|
-|_matricula|stock|#modelo->Modelos|#Código->TipoDeVeiculo|
+|<ins>matricula</ins>|stock|#modelo->Modelos|#Código->TipoDeVeiculo|
 
 |Serviço    |        |       |  
 |------------|--------|-------|
-|_idserviço|valor|ndias|
+|<ins>idserviço</ins>|valor|ndias|
 
 
 |CódigoPostais         |                        |
 |-------------------|------------------------|
-|_CódigoPostal|Localidade|
+|<ins>CódigoPostal</ins>|Localidade|
 
 |Modelos                |                 |        
 |----------------------|-----------------|
-|_Modelo|marca|
+|<ins>Modelo</ins>|marca|
 
 
 ## Normalização do Esquema Relacional
