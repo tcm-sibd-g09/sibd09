@@ -83,6 +83,7 @@ Não existe Entidades Fracas
 |Funcionário  |         |          |         |                        |           |       |
 |---------|---------|----------|---------|------------------------|-----------|--------|
 |<ins>nic</ins>|endereço|dn|sexo|PrimeiroNome|UltimoNome|Salário|#Código->Departamento|#numero->Filial|
+
 |Departamento|    |         |         |         |
 |----------|----|---------|---------|----------|
 |<ins>código</ins>      |rua|porta|#Códigopostal->CódigoPostais|localidade|
