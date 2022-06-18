@@ -15,12 +15,14 @@ Esta tabela irá guardar informações sobre os clientes.
 
 | **Nome** | **Descrição** | **Domínio** | **por Omissão** | **Automático** | **Nulo** |
 | --- | --- | --- | --- | --- | --- |
-| **numeroCliente** | Número de cliente (auto-incrementado). | INT | - | Sim | Não |
-| **nome** | Nome do cliente. | VARCHAR(45) | - | Não | Não |
-| **telemovel** | Telemóvel do cliente. | INT | - |
- | Não |
-| **codigoPostal** | Código postal do cliente. | VARCHAR (45) | - | Não | Sim |
-| **numeroContribuinte** | Numero de contribuinte da loja que o cliente pertence (FK). | INT | - | Não | Não |
+| **nic** | Número de cliente (auto-incrementado) | INT | - | Sim | Não |
+| **Primeironome** | Nome do cliente | VARCHAR(100) | - | Não | Não |
+| **UltimoNome** | Ultimo nome do cliente | VARCHAR(100) | - | Não | Não |
+| **CartaCondução** | Numero da carta de condução do cliente | BIGINT | - | Não | Não |
+| **Telefone** | Numero de telemóvel do cliente | BIGINT | - | Não | Não |
+| **Email**  | Email do email do cliente | VARCHAR(100) | - | Não | Não |
+| **CodPostal**| Número do código postal do cliente | INT | - | Não| Não |
+
 
 ## Restrições de Integridade
 
@@ -29,20 +31,20 @@ Esta tabela irá guardar informações sobre os clientes.
 
 | **Coluna(s)** |
 | --- |
-| **numeroCliente** |
+| **nic** |
 
 
 ### Referencial (chaves estrangeiras)
 
 | **Nome** | **Coluna(s)** | **Tabela referênciada** | **Coluna(s) referênciada(s)** | **Indexar** |
 | --- | --- | --- | --- | --- |
-| **FK\_Loja\_Clientes** | numeroContribuinte | Loja | numeroContribuinte | Não |
+| **FK\_clientes\_CodPostais** | numeroCliente | CodPostais | numeroCódigoPostais | Não |
 
-# Fornecedores
+# CódigoPostais
 
 ## Descrição
 
-Esta tabela irá guardar informações sobre os fornecedores.
+Esta tabela irá guardar informações sobre os CódigosPostais.
 
 ## Colunas
 
@@ -70,11 +72,11 @@ Esta tabela irá guardar informações sobre os fornecedores.
 | --- | --- | --- | --- | --- |
 | **FK\_Loja\_Fornecedores** | numeroContribuinte | Loja | numeroContribuinte | Não |
 
-# Funcionarios
+# Alugar
 
 ## Descrição
 
-Esta tabela irá guardar informações sobre os funcionários.
+Esta tabela irá guardar informações sobre alugar.
 
 ## Colunas
 
@@ -105,11 +107,11 @@ Esta tabela irá guardar informações sobre os funcionários.
 | --- | --- | --- | --- | --- |
 | **FK\_Loja\_Funcionarios** | numeroContribuinte | Loja | numeroContribuinte | Não |
 
-# Loja
+# Departamento
 
 ## Descrição
 
-Esta tabela irá guardar informações acerca das lojas.
+Esta tabela irá guardar informações acerca o departamento.
 
 ## Colunas
 
@@ -130,11 +132,11 @@ Esta tabela irá guardar informações acerca das lojas.
 | --- |
 | **numeroContribuinte** |
 
-# Pedidos
+# Filial
 
 ## Descrição
 
-Esta tabela irá guardar informações sobre os pedidos.
+Esta tabela irá guardar informações sobre as filial.
 
 ## Colunas
 
@@ -159,11 +161,11 @@ Esta tabela irá guardar informações sobre os pedidos.
 | --- | --- | --- | --- | --- |
 | **FK\_Funcionarios\_Pedidos** | codigoFuncionario | Funcionarios | codigoFuncionario | Sim |
 
-# Produto
+# Funcionário
 
 ## Descrição
 
-Esta tabela irá guardar informações sobre os produtos.
+Esta tabela irá guardar informações sobre os funcionários.
 
 ## Colunas
 
@@ -193,11 +195,11 @@ Esta tabela irá guardar informações sobre os produtos.
 | --- | --- | --- | --- | --- |
 | **FK\_Loja\_Produto** | numeroContribuinte | Loja | numeroContribuinte | Sim |
 
-# Reservas
+# Modelos
 
 ## Descrição
 
-Esta tabela irá guardar informações sobre as reservas.
+Esta tabela irá guardar informações sobre os modelos.
 
 ## Colunas
 
@@ -225,11 +227,11 @@ Esta tabela irá guardar informações sobre as reservas.
 | --- | --- | --- | --- | --- |
 | **FK\_Clientes\_Reservas** | numeroCliente | Clientes | numeroCliente | Sim |
 
-# Vendas
+# Serviço
 
 ## Descrição
 
-Esta tabela irá guardar informações sobre as vendas.
+Esta tabela irá guardar informações sobre os serviço.
 
 ## Colunas
 
@@ -254,11 +256,11 @@ Esta tabela irá guardar informações sobre as vendas.
 | --- | --- | --- | --- | --- |
 | **FK\_Loja\_Vendas** | numeroContribuinte | Loja | numeroContribuinte | Sim |
 
-# Produtoreservas
+# TipoVeiculo
 
 ## Descrição
 
-Tabela para relacionar as entidades Produto e Reservas.
+Esta tabela irá guardar informações sobre os tipos de veiculos.
 
 ## Colunas
 
@@ -285,11 +287,11 @@ Tabela para relacionar as entidades Produto e Reservas.
 | **FK\_Produto\_Reservas** | codigoProduto | produto | codigoProduto | Sim |
 | **FK\_Reservas** | numeroReserva | reservas | numeroReserva | Sim |
 
-# Produtovendas
+# Veiculos
 
 ## Descrição
 
-Tabela para relacionar as entidades Produto e Vendas.
+Esta tabela irá guardar informações sobre os veiculos.
 
 ## Colunas
 
@@ -316,39 +318,6 @@ Tabela para relacionar as entidades Produto e Vendas.
 | --- | --- | --- | --- | --- |
 | **FK\_Produtos** | codigoProduto | produto | codigoProduto | Sim |
 | **FK\_Vendas** | codigo | vendas | codigo | Sim |
-
-# Produtopedidos
-
-## Descrição
-
-Tabela para relacionar as entidades Produto e Pedidos.
-
-## Colunas
-
-| **Nome** | **Descrição** | **Domínio** | **por Omissão** | **Automático** | **Nulo** |
-| --- | --- | --- | --- | --- | --- |
-| **codigoProduto** | Código do produto. | INT | - | Não | Não |
-| **numeroPedido** | Número do Pedido. | INT | - | Não | Não |
-| **quantidade** | Quantidade do Produto no Pedido. | INT | - | Não | Não |
-| **valor** | Valor do Produto no Pedido. | DECIMAL(10,2) | - | Não | Não |
-
-## Restrições de Integridade
-
-
-### Chave primária
-
-| **Coluna(s)** |
-| --- |
-| **codigoProduto** |
-| **numeroPedido** |
-
-
-### Referêncial (chaves estrangeiras)
-
-| **Nome** | **Coluna(s)** | **Tabela referênciada** | **Coluna(s) referênciada(s)** | **Indexar** |
-| --- | --- | --- | --- | --- |
-| **FK\_Pedidos** | numeroPedido | pedidos | numeroPedido | Sim |
-| **FK\_Produto** | codigoProduto | produtos | codigoProduto | Sim |
 
 
 
