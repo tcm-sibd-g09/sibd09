@@ -3,7 +3,7 @@
 ## Modelo E/A
 Entidades:
 
-CLIENTE (_nic, telefone, email, cartaconducao, nome (primeiro, ultimo)
+CLIENTE (<ins>nic<ins>, telefone, email, cartaconducao, nome (primeiro, ultimo)
 
 ALUGAR (_código, datainicial, datafinal, custo, caução)
 
