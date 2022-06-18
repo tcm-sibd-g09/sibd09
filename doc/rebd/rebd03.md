@@ -4,46 +4,46 @@
 
 ### Passo 1: Entidades e Atributos
 
-Cliente (<ins>nic</ins>, telefone, email, cartaconducao, primeironome, ultimonome)
+CLIENTE (<ins>nic</ins>, telefone, email, cartaconducao, primeironome, ultimonome)
 
-Alugar (<ins>código</ins>, datainicial, datafinal, custo, caução)
+ALUGAR (<ins>código</ins>, datainicial, datafinal, custo, caução)
 
-Filial (<ins>numero</ins>, localização(código postal, localidade, rua, porta)
+FILIAL (<ins>numero</ins>, localização(código postal, localidade, rua, porta)
 
-Funcionário (<ins>nic</ins>, endereço, dn, sexo, primeironome, ultimonome, salário)
+FUNCIONÁRIO (<ins>nic</ins>, endereço, dn, sexo, primeironome, ultimonome, salário)
 
-TipoVeiculo(<ins>Código</ins>, nome, valorHora)
+TIPOVEICULO(<ins>Código</ins>, nome, valorHora)
 
-Departamento (<ins>código</ins>,código postal, localidade, rua, porta)
+DEPARTAMENTO (<ins>código</ins>,código postal, localidade, rua, porta)
 
-Veiculo (<ins>matricula</ins>, marca, modelo, stock)
+VEICULO (<ins>matricula</ins>, marca, modelo, stock)
 
-Serviço (<ins>idserviço</ins>, valor, ndias)
+SERVIÇO (<ins>idserviço</ins>, valor, ndias)
 
 ### Passo 2: Associações 1:1
 Não existe ligações 1:1
 
 #### Passo 3: Associações 1:N
 
-Cliente (<ins>nic</ins>, telefone, email, cartaconducao, primeironome, ultimonome)
+CLIENTE (<ins>nic</ins>, telefone, email, cartaconducao, primeironome, ultimonome)
 
-Alugar (<ins>código</ins>, datainicial, datafinal, custo, caução, #nic->Cliente, #idserviço->serviço, #matricula->veiculo, #numero->Filial)
+ALUGAR (<ins>código</ins>, datainicial, datafinal, custo, caução, #nic->Cliente, #idserviço->serviço, #matricula->veiculo, #numero->Filial)
 
-Filial (<ins>numero</ins>, rua, porta, localidade, #códigopostal->CódigoPostais)
+FILIAL (<ins>numero</ins>, rua, porta, localidade, #códigopostal->CódigoPostais)
 
-Funcionário (<ins>nic</ins>, endereço, dn, sexo, primeironome, ultimonome, salário, #Código->Departamento, #numero->Filial)
+FUNCIONÁRIO (<ins>nic</ins>, endereço, dn, sexo, primeironome, ultimonome, salário, #Código->Departamento, #numero->Filial)
 
-TipoVeiculo(<ins>Código</ins>, nome, valorHora)
+TIPOVEICULO (<ins>Código</ins>, nome, valorHora)
 
-Departamento (<ins>código</ins>, rua, porta, localidade, #CódigoPostal->CódigoPostais)
+DEPARTAMENTO (<ins>código</ins>, rua, porta, localidade, #CódigoPostal->CódigoPostais)
 
-Veiculo (<ins>matricula</ins>, #modelo->Modelos, #Código->TipoDeVeiculo)
+VEICULO (<ins>matricula</ins>, #modelo->Modelos, #Código->TipoDeVeiculo)
 
-Serviço (<ins>idserviço</ins>, valor, ndias)
+SERVIÇO (<ins>idserviço</ins>, valor, ndias)
 
-CódigoPostais (<ins>CódigoPostal</ins>, localidade)
+CÓDIGOPOSTAIS (<ins>CódigoPostal</ins>, localidade)
 
-Modelos (<ins>modelo</ins>, marca)
+MODELOS (<ins>modelo</ins>, marca)
 
 ### Passo 4: Associações N:M
 
@@ -64,45 +64,45 @@ Não existe Entidades Fracas
 
 ## Relações
 
-|Cliente|    |      |   |         |                   |
+|CLIENTE|    |      |   |         |                   |
 |-----------|----|------|---|---------|-------------------|
 |<ins>nic</ins>      |PrimeiroNome|UltimoNome|CartaCondução|telefone|Email|
 
-|Alugar    |            |        |        |        |         |         |     |       |
+|ALUGAR    |            |        |        |        |         |         |     |       |
 |-------------|------------|------|-----|-----|----|-----|---------|---------|
 |<ins>Código</ins>|DataInicial|DataFinal|Custo|Caução|#nic->Cliente|#idserviço->serviço|#matricula->veiculo|#numero->Filial|
 
-|Filial    |    |                 |                    |        |
+|FILIAL    |    |                 |                    |        |
 |---------|----|-----------------|--------------------|-----------|
 |<ins>numero</ins>|rua|#_códigopostal->CódigoPostais|porta|localidade|
 
-|TipoVeiculo   |       |          |      
+|TIPOVEICULO   |       |          |      
 |----------|-------|----------|
 |<ins>Código</ins>|nome|ValorHora|
 
-|Funcionário  |         |          |         |                        |           |       |
+|FUNCIONÁRIO  |         |          |         |                        |           |       |
 |---------|---------|----------|---------|------------------------|-----------|--------|
 |<ins>nic</ins>|endereço|dn|sexo|PrimeiroNome|UltimoNome|Salário|#Código->Departamento|#numero->Filial|
 
-|Departamento|    |         |         |         |
+|DEPARTAMENTO|    |         |         |         |
 |----------|----|---------|---------|----------|
 |<ins>código</ins>      |rua|porta|#Códigopostal->CódigoPostais|localidade|
 
 
-|Veiculo|    |           |        |
+|VEICULO|    |           |        |
 |-------|----|-----------|--------|
 |<ins>matricula</ins>|stock|#modelo->Modelos|#Código->TipoDeVeiculo|
 
-|Serviço    |        |       |  
+|SERVIÇO    |        |       |  
 |------------|--------|-------|
 |<ins>idserviço</ins>|valor|ndias|
 
 
-|CódigoPostais         |                        |
+|CÓDIGOPOSTAIS         |                        |
 |-------------------|------------------------|
 |<ins>CódigoPostal</ins>|Localidade|
 
-|Modelos                |                 |        
+|MODELOS                |                 |        
 |----------------------|-----------------|
 |<ins>Modelo</ins>|marca|
 
@@ -111,29 +111,29 @@ Não existe Entidades Fracas
 
 ### Dependências Funcionais:
 
-Alugar ( #nic->Cliente, #idserviço->serviço, #matricula->veiculo, #numero->Filial, <ins>código</ins>, datainicial, datafinal, custo, caução)
+ALUGAR ( #nic->Cliente, #idserviço->serviço, #matricula->veiculo, #numero->Filial, <ins>código</ins>, datainicial, datafinal, custo, caução)
 
-Funcionário (#Código->Departamento, #numero->Filial, <ins>nic</ins>, endereço, dn, sexo, PrimeiroNome, UltimoNome, salário)
+FUNCIONÁRIO (#Código->Departamento, #numero->Filial, <ins>nic</ins>, endereço, dn, sexo, PrimeiroNome, UltimoNome, salário)
 
-Veiculo (#Código->TipoDeVeiculo, <ins>matricula</ins>, marca, modelo, stock)
+VEICULO (#Código->TipoDeVeiculo, <ins>matricula</ins>, marca, modelo, stock)
 
 ## 1ºForma Normal 1ºParte (Compostos - atributos)
 
-Cliente (<ins>nic</ins>, telefone, email, cartaconducao, PrimeiroNome, UltimoNome)
+CLIENTE (<ins>nic</ins>, telefone, email, cartaconducao, PrimeiroNome, UltimoNome)
 
-Alugar (<ins>código</ins>, datainicial, datafinal, custo, caução, #nic->Cliente, #idserviço->serviço, #matricula->veiculo, #numero->Filial)
+ALUGAR (<ins>código</ins>, datainicial, datafinal, custo, caução, #nic->Cliente, #idserviço->serviço, #matricula->veiculo, #numero->Filial)
 
-Filial (<ins>numero</ins>,código postal, localidade, rua, porta)
+FILIAL (<ins>numero</ins>,código postal, localidade, rua, porta)
 
-Funcionário (<ins>nic</ins>, endereço, dn, sexo, PrimeiroNome, UltimoNome, salário, #Código->Departamento, #numero->Filial)
+FUNCIONÁRIO (<ins>nic</ins>, endereço, dn, sexo, PrimeiroNome, UltimoNome, salário, #Código->Departamento, #numero->Filial)
 
-TipoVeiculo(<ins>Código</ins>, nome, valorHora)
+TIPOVEICULO(<ins>Código</ins>, nome, valorHora)
 
-Departamento (<ins>código</ins>,código postal, localidade, rua, porta)
+DEPARTAMENTO (<ins>código</ins>,código postal, localidade, rua, porta)
 
-Veiculo (<ins>matricula</ins>, marca, modelo, stock, #Código->TipoDeVeiculo)
+VEICULO (<ins>matricula</ins>, marca, modelo, stock, #Código->TipoDeVeiculo)
 
-Serviço (<ins>idserviço</ins>, valor, ndias)
+SERVIÇO (<ins>idserviço</ins>, valor, ndias)
 
 
 ## 1ºForma Normal 2ºParte (atributos multivalor)
@@ -146,47 +146,47 @@ Já está, pois não existem ligações M:N
 
 ## 3ºForma Normal 
 
-Cliente (<ins>nic</ins>, telefone, email, cartaconducao, PrimeiroNome, UltimoNome)
+CLIENTE (<ins>nic</ins>, telefone, email, cartaconducao, PrimeiroNome, UltimoNome)
 
-Alugar (<ins>código</ins>, datainicial, datafinal, custo, caução, #nic->Cliente, #idserviço->serviço, #matricula->veiculo, #numero->Filial)
+ALUGAR (<ins>código</ins>, datainicial, datafinal, custo, caução, #nic->Cliente, #idserviço->serviço, #matricula->veiculo, #numero->Filial)
 
-Filial (<ins>numero</ins>,#código postal->CódigoPostais, rua, porta)
+FILIAL (<ins>numero</ins>,#código postal->CódigoPostais, rua, porta)
 
-Funcionário (<ins>nic</ins>, endereço, dn, sexo, PrimeiroNome, UltimoNome, salário, #Código->Departamento, #numero->Filial)
+FUNCIONÁRIO (<ins>nic</ins>, endereço, dn, sexo, PrimeiroNome, UltimoNome, salário, #Código->Departamento, #numero->Filial)
 
-TipoVeiculo(<ins>Código</ins>, nome, valorHora)
+TIPOVEICULO(<ins>Código</ins>, nome, valorHora)
 
-Departamento (<ins>código</ins>,#código postal->CódigoPostais, rua, porta)
+DEPARTAMENTO (<ins>código</ins>,#código postal->CódigoPostais, rua, porta)
 
-Veiculo (<ins>matricula</ins>, #modelo->Modelos, stock, #Código->TipoDeVeiculo)
+VEICULO (<ins>matricula</ins>, #modelo->Modelos, stock, #Código->TipoDeVeiculo)
 
-Serviço (<ins>idserviço</ins>, valor, ndias)
+SERVIÇO (<ins>idserviço</ins>, valor, ndias)
 
-CódigoPostais (<ins>CódigoPostal</ins>, localidade)
+CÓDIGOPOSTAIS (<ins>CódigoPostal</ins>, localidade)
 
-Modelos (<ins>Modelo</ins>, marca)
+MODELOS (<ins>Modelo</ins>, marca)
 
 ## Forma Normal de Boyce-Codd 
 
-Cliente (<ins>nic</ins>, telefone, email, cartaconducao, PrimeiroNome, UltimoNome)
+CLIENTE (<ins>nic</ins>, telefone, email, cartaconducao, PrimeiroNome, UltimoNome)
 
-Alugar (<ins>código</ins>, datainicial, datafinal, custo, caução, #nic->Cliente, #idserviço->serviço, #matricula->veiculo, #numero->Filial)
+ALUGAR (<ins>código</ins>, datainicial, datafinal, custo, caução, #nic->Cliente, #idserviço->serviço, #matricula->veiculo, #numero->Filial)
 
-Filial (<ins>numero</ins>,#código postal->CódigoPostais, rua, porta)
+FILIAL (<ins>numero</ins>,#código postal->CódigoPostais, rua, porta)
 
-Funcionário (<ins>nic</ins>, endereço, dn, sexo, PrimeiroNome, UltimoNome, salário, #Código->Departamento, #numero->Filial)
+FUNCIONÁRIO (<ins>nic</ins>, endereço, dn, sexo, PrimeiroNome, UltimoNome, salário, #Código->Departamento, #numero->Filial)
 
-TipoVeiculo(<ins>Código</ins>, nome, valorHora)
+TIPOVEICULO(<ins>Código</ins>, nome, valorHora)
 
-Departamento (<ins>código</ins>,#código postal->CódigoPostais, rua, porta)
+DEPARTAMENTO (<ins>código</ins>,#código postal->CódigoPostais, rua, porta)
 
-Veiculo (<ins>matricula</ins>, #modelo->Modelos, stock, #Código->TipoDeVeiculo)
+VEICULO(<ins>matricula</ins>, #modelo->Modelos, stock, #Código->TipoDeVeiculo)
 
-Serviço (<ins>idserviço</ins>, valor, ndias)
+SERVIÇO (<ins>idserviço</ins>, valor, ndias)
 
-CódigoPostais (<ins>CódigoPostal</ins>, localidade)
+CÓDIGOPOSTAIS (<ins>CódigoPostal</ins>, localidade)
 
-Modelos (<ins>Modelo</ins>, marca)
+MODELOS (<ins>Modelo</ins>, marca)
 
 ## 4ºForma Normal 
 
