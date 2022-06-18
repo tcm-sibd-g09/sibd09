@@ -192,6 +192,10 @@ MODELOS (<ins>Modelo</ins>, marca)
 
 Não eixste alterações
 
+
+![Tabela](https://user-images.githubusercontent.com/96230913/171996254-6a55cbd7-25bf-4d17-a3ef-de3687815773.png)
+
+
 ---
 [< Previous](rebd02.md) | [^ Main](https://github.com/exemploTrabalho/reportSIBD/) | [Next >](rebd04.md)
 :--- | :---: | ---: 
