@@ -38,7 +38,8 @@ TrabalhaEm (DEPARTAMENTO, FUNCIONÁRIO) 1:N P/T
 DIAGRAMA 
 
 
-![InstantCar](https://user-images.githubusercontent.com/96230913/171990586-d2a8e846-5ca0-48f8-aa52-f9a130ccedce.png)
+![InstantCar](https://user-images.githubusercontent.com/96230913/174440125-1e7a643a-90ba-4ca7-9ff5-08d8f7098bee.png)
+
 
 
 
