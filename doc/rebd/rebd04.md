@@ -12,7 +12,8 @@
 
 ### Tabela_a
 
-![Tabela](https://user-images.githubusercontent.com/96230913/171996254-6a55cbd7-25bf-4d17-a3ef-de3687815773.png)
+![Diagrama_Tabelas](https://user-images.githubusercontent.com/96230913/174501872-c0ed043f-3f35-4984-9a0c-5cd5d2e9a46e.png)
+
 
 
 ##### Descrição das tabelas: 
