@@ -206,8 +206,8 @@ INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salari
 ('8', 'Joaquim', 'Albuquerque' , 'masculino','juaquindelpasso@gmail.com','700','4/3/1979' ),
 ('9', 'Telma', 'Barros' , 'feminino','telmaluca@gmail.com','600','1/9/1995' ),
 
-INSERT INTO `seccao` (nome, id) VALUES 
-('maquilhagem', '1'),
+INSERT INTO `cliente` (nic, telefone, email, cartaconducao, primeironome, ultimonome) VALUES 
+('1', '960000001', 'joseantonio@gmail.com','100000001', 'José', 'Antonio'),
 ('comesticos', '2'),
 ('perfumaria', '3'),
 ('caixa', '4'),
