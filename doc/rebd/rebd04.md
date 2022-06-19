@@ -21,7 +21,7 @@ Esta tabela irá guardar informações sobre os clientes.
 | **CartaCondução** | Numero da carta de condução do cliente | BIGINT | - | Não | Não |
 | **Telefone** | Numero de telemóvel do cliente | BIGINT | - | Não | Não |
 | **Email**  | Email do email do cliente | VARCHAR(100) | - | Não | Não |
-| **CodPostal**| Número do código postal do cliente | INT | - | Não| Não |
+
 
 
 ## Restrições de Integridade
