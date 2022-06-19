@@ -317,7 +317,7 @@ Esta tabela irá guardar informações sobre os veiculos.
 
 ### Tabela_a
 
-
+![Tabela](https://user-images.githubusercontent.com/96230913/171996254-6a55cbd7-25bf-4d17-a3ef-de3687815773.png)
 
 
 
