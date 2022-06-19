@@ -142,7 +142,21 @@ Não existem alterações
 
 ## 2ºForma Normal
 
-Já está, pois não existem ligações N:M
+CLIENTE (<ins>nic</ins>, telefone, email, cartaconducao, PrimeiroNome, UltimoNome)
+
+ALUGAR (<ins>código</ins>, datainicial, datafinal, custo, caução, #nic->Cliente, #idserviço->serviço, #matricula->veiculo, #numero->Filial)
+
+FILIAL (<ins>numero</ins>,código postal, localidade, rua, porta)
+
+FUNCIONÁRIO (<ins>nic</ins>, endereço, dn, sexo, PrimeiroNome, UltimoNome, salário, #Código->Departamento, #numero->Filial)
+
+TIPOVEICULO(<ins>Código</ins>, nome, valorHora)
+
+DEPARTAMENTO (<ins>código</ins>,código postal, localidade, rua, porta)
+
+VEICULO (<ins>matricula</ins>, marca, modelo, stock, #Código->TipoDeVeiculo)
+
+SERVIÇO (<ins>idserviço</ins>, valor, ndias)
 
 ## 3ºForma Normal 
 
