@@ -16,8 +16,8 @@ Esta tabela irá guardar informações sobre os clientes.
 | **Nome** | **Descrição** | **Domínio** | **por Omissão** | **Automático** | **Nulo** |
 | --- | --- | --- | --- | --- | --- |
 | **nic** | Número de cliente (auto-incrementado) | INT | - | Sim | Não |
-| **Primeironome** | Nome do cliente | VARCHAR(100) | - | Não | Não |
-| **UltimoNome** | Ultimo nome do cliente | VARCHAR(100) | - | Não | Não |
+| **Primeironome** | Primeiro Nome do cliente | VARCHAR(100) | - | Não | Não |
+| **UltimoNome** | Ultimo Nome do cliente | VARCHAR(100) | - | Não | Não |
 | **CartaCondução** | Numero da carta de condução do cliente | BIGINT | - | Não | Não |
 | **Telefone** | Numero de telemóvel do cliente | BIGINT | - | Não | Não |
 | **Email**  | Email do email do cliente | VARCHAR(100) | - | Não | Não |
@@ -50,11 +50,8 @@ Esta tabela irá guardar informações sobre os CódigosPostais.
 
 | **Nome** | **Descrição** | **Domínio** | **por Omissão** | **Automático** | **Nulo** |
 | --- | --- | --- | --- | --- | --- |
-| **codigoFornecedor** | Código do fornecedor (auto-incrementado). | INT | - | Sim | Não |
-| **nome** | Nome do fornecedor. | VARCHAR(45) | - | Não | Não |
-| **morada** | Morada do fornecedor. | VARCHAR(45) | - | Não |
-| **codigoPostal** | Código postal do fornecedor. | VARCHAR(45) | - | Não | Não |
-| **numeroContribuinte** | Numero de contribuinte da loja que fornece produtos (FK). | INT | - | Não | Não |
+| **codigoPostal** | Código postal do fornecedor. | INT | - | Não | Não |
+| **localidade** | Nome da localidade | INT | - | Não | Não |
 
 ## Restrições de Integridade
 
@@ -63,33 +60,28 @@ Esta tabela irá guardar informações sobre os CódigosPostais.
 
 | **Coluna(s)** |
 | --- |
-| **codigoFornecedor** |
-
-
-### Referencial (chaves estrangeiras)
-
-| **Nome** | **Coluna(s)** | **Tabela referênciada** | **Coluna(s) referênciada(s)** | **Indexar** |
-| --- | --- | --- | --- | --- |
-| **FK\_Loja\_Fornecedores** | numeroContribuinte | Loja | numeroContribuinte | Não |
+| **codigoPostal** |
 
 # Alugar
 
 ## Descrição
 
-Esta tabela irá guardar informações sobre alugar.
+Esta tabela irá guardar informações sobre alugueres.
 
 ## Colunas
 
 | **Nome** | **Descrição** | **Domínio** | **por Omissão** | **Automático** | **Nulo** |
 | --- | --- | --- | --- | --- | --- |
-| **codigoFuncionario** | Código de funcionário (auto-incrementado). | INT | - | Sim | Não |
-| **tipo** | Tipo de funcionário. | VARCHAR(45) | - | Não | Não |
-| **nome** | Nome do funcionário. | VARCHAR(45) | - | Não | Não |
-| **morada** | Morada do funcionário. | VARCHAR(200) | - | Não | Não |
-| **nif** | NIF do funcionário. | INT | - | Não | Não |
-| **telemovel** | Telemóvel do funcionário. | VARCHAR(45) | - | Não | Não |
-| **Email** | Email do funcionário. | VARCHAR(45) | - | Não | Sim |
-| **numeroContribuinte** | Numero de contribuinte da loja que o funcionário trabalha (FK). | INT | - | Não | Não |
+| **codigo** | Código do aluguer (auto-incrementado). | INT | - | Sim | Não |
+| **dataIncial** | Data inicial do aluguer | Date | - | Não | Não |
+| **dataFinal** | Data final do aluguer | Date | - | Não | Não |
+| **custo** | Custo do aluguer | numeric (10, 2) | - | Não | Não |
+| **caucao** | Caução do aluguer | numeric (10, 2) | - | Não | Não |
+| **idCliente** | Identificação do cliente | INT | - | Não | Não |
+| **idServiço** | Identificação do serviço | INT | - | Não | Sim |
+| **matriculaVeiculo** | Matricula do veiculo do aluguer | Varchar (30) | - | Não | Sim |
+| **idFilial** | Identificação de filial | INT | - | Não | Não |
+
 
 ## Restrições de Integridade
 
@@ -98,30 +90,30 @@ Esta tabela irá guardar informações sobre alugar.
 
 | **Coluna(s)** |
 | --- |
-| **codigoFuncionario** |
+| **codigo** |
 
 
 ### Referêncial (chaves estrangeiras)
 
 | **Nome** | **Coluna(s)** | **Tabela referênciada** | **Coluna(s) referênciada(s)** | **Indexar** |
 | --- | --- | --- | --- | --- |
-| **FK\_Loja\_Funcionarios** | numeroContribuinte | Loja | numeroContribuinte | Não |
+| **FK\_alugar\_Funcionarios** | Clientes | Alugar |  | Não |
 
 # Departamento
 
 ## Descrição
 
-Esta tabela irá guardar informações acerca o departamento.
+Esta tabela irá guardar informações acerca do departamento.
 
 ## Colunas
 
 | **Nome** | **Descrição** | **Domínio** | **por Omissão** | **Automático** | **Nulo** |
 | --- | --- | --- | --- | --- | --- |
-| **numeroContribuinte** | NIF da loja (cada loja terá um NIF diferente). | INT | - | Não | Não |
-| **nome** | Nome da loja. | VARCHAR(45) | - | Não | Não |
-| **morada** | Morada da loja. | VARCHAR(45) | - | Não | Não |
-| **codigoPostal** | Código postal da loja. | VARCHAR(45) | - | Não | Não |
-| **Telefone** | Telefone da loja. | INT | - | Não | Não |
+| **codigo** | Identificação através de um codigo | INT | - | Sim | Não |
+| **codpostal** | Código Postal do departamento | INT | - | Não | Não |
+| **rua** | Nome da rua. | VARCHAR(100) | - | Não | Não |
+| **porta** | Numero da porta | INT | - | Não | Não |
+
 
 ## Restrições de Integridade
 
@@ -130,7 +122,7 @@ Esta tabela irá guardar informações acerca o departamento.
 
 | **Coluna(s)** |
 | --- |
-| **numeroContribuinte** |
+| **codigo** |
 
 # Filial
 
@@ -142,8 +134,11 @@ Esta tabela irá guardar informações sobre as filial.
 
 | **Nome** | **Descrição** | **Domínio** | **por Omissão** | **Automático** | **Nulo** |
 | --- | --- | --- | --- | --- | --- |
-| **numeroPedido** | Número do Pedido. | INT | - | Não | Não |
-| **codigoFuncionario** | Código do funcionário que efectuou o pedido (FK). | INT | - | Não | Não |
+| **numero** | Número da filial | INT | - | Não | Não |
+| **codpostal** | Código Postal da filial | INT | - | Não | Não |
+| **rua** | Nome da rua | Varchar (100) | - | Não | Não |
+| **porta** | Numero da porta | INT | - | Não | Não |
+| **idDepartamento** | Identificação do departamento | INT | - | Não | Não |
 
 ## Restrições de Integridade
 
@@ -152,7 +147,7 @@ Esta tabela irá guardar informações sobre as filial.
 
 | **Coluna(s)** |
 | --- |
-| **numeroPedido** |
+| **numero** |
 
 
 ### Referencial (chaves estrangeiras)
@@ -171,13 +166,14 @@ Esta tabela irá guardar informações sobre os funcionários.
 
 | **Nome** | **Descrição** | **Domínio** | **por Omissão** | **Automático** | **Nulo** |
 | --- | --- | --- | --- | --- | --- |
-| **codigoProduto** | Código do produto (auto-incrementado). | INT | - | Sim | Não |
-| **stockLoja** | Stock na Loja. | INT | - | Não | Não |
-| **stockArmazem** | Stock no armazém. | INT | - | Não | Não |
-| **tamanho** | Tamanho do produto. | VARCHAR(45) | - | Não | Sim |
-| **numeroContribuinte** | Numero de contribuinte da loja que tem o produto (FK). | INT | - | Não | Não |
-| **descricao** | Descrição do produto. | VARCHAR(200) | - | Não | Não |
-| **preco** | Preço do produto. | DECIMAL(10,2) | - | Não | Não |
+| **nic** | nic do funcionário | INT | - | Não | Não |
+| **email** | email do funcionário | Varchar (100) | - | Não | Não |
+| **dataNascimento** | Data de nascimento do funcionário | date | - | Não | Não |
+| **Salário** | Salário do funcionário | numeric (10, 2) | - | Não | Não |
+| **idFilial** | Identificação do filial | INT | - | Não | Não |
+| **primeiroNome** | primeiro nome do funcionário | VARCHAR(100) | - | Não | Não |
+| **ultimoNome** | ultimo nome do funcionário | VARCHAR(100) | - | Não | Não |
+| **idDepartamento** | Identificação do departamento | INT | - | Não | Não |
 
 ## Restrições de Integridade
 
@@ -186,7 +182,7 @@ Esta tabela irá guardar informações sobre os funcionários.
 
 | **Coluna(s)** |
 | --- |
-| **codigoProduto** |
+| **nic** |
 
 
 ### Referêncial (chaves estrangeiras)
@@ -205,11 +201,8 @@ Esta tabela irá guardar informações sobre os modelos.
 
 | **Nome** | **Descrição** | **Domínio** | **por Omissão** | **Automático** | **Nulo** |
 | --- | --- | --- | --- | --- | --- |
-| **numeroReserva** | Número da reserva (auto-incrementado). | INT | - | Sim | Não |
-| **apelido** | Apelido da reserva. | VARCHAR(45) | - | Não | Não |
-| **valor** | Valor da reserva. | DECIMAL(10,2) | - | Não | Não |
-| **estadoPagamento** | Estado do pagamento da reserva. | VARCHAR(45) | - | Não | Sim |
-| **numeroCliente** | Numero de cliente que efectuou a reserva (FK). | INT | - | Não | Não |
+| **modelo** | modelo do veiculo | VARCHAR(100) | - | Não | Não |
+| **marca** | marca do veiculo | VARCHAR(100) | - | Não | Não |
 
 ## Restrições de Integridade
 
@@ -218,7 +211,7 @@ Esta tabela irá guardar informações sobre os modelos.
 
 | **Coluna(s)** |
 | --- |
-| **numeroReserva** |
+| **modelo** |
 
 
 ### Referêncial (chaves estrangeiras)
@@ -237,8 +230,9 @@ Esta tabela irá guardar informações sobre os serviço.
 
 | **Nome** | **Descrição** | **Domínio** | **por Omissão** | **Automático** | **Nulo** |
 | --- | --- | --- | --- | --- | --- |
-| **codigo** | Código da venda (auto-incrementado). | INT | - | Sim | Não |
-| **numeroContribuinte** | Numero de contribuinte da loja que vende produtos (FK). | INT | - | Não | Não |
+| **idServiço** | Identificação do serviço | INT | - | Sim | Não |
+| **valor** | Valor do serviço | Numeric (10, 2) | - | Não | Não |
+| **nDias** | Numero de dias do serviço | INT | - | Não | Não |
 
 ## Restrições de Integridade
 
@@ -247,7 +241,7 @@ Esta tabela irá guardar informações sobre os serviço.
 
 | **Coluna(s)** |
 | --- |
-| **codigo** |
+| **idServiço** |
 
 
 ### Referêncial (chaves estrangeiras)
@@ -266,8 +260,9 @@ Esta tabela irá guardar informações sobre os tipos de veiculos.
 
 | **Nome** | **Descrição** | **Domínio** | **por Omissão** | **Automático** | **Nulo** |
 | --- | --- | --- | --- | --- | --- |
-| **codigoProduto** | Código do produto. | INT | - | Não | Não |
-| **numeroReserva** | Número da reserva. | INT | - | Não | Não |
+| **codigo** | Código do veiculo | INT | - | Não | Não |
+| **nome** | Nome do tipo de veiculo | VARCHAR (100) | - | Não | Não |
+| **valorHora** | Número do valor que paga à hora | FLOAT | - | Não | Não |
 
 ## Restrições de Integridade
 
@@ -276,8 +271,7 @@ Esta tabela irá guardar informações sobre os tipos de veiculos.
 
 | **Coluna(s)** |
 | --- |
-| **codigoProduto** |
-| **numeroReserva** |
+| **codigo** |
 
 
 ### Referêncial (chaves estrangeiras)
@@ -297,9 +291,9 @@ Esta tabela irá guardar informações sobre os veiculos.
 
 | **Nome** | **Descrição** | **Domínio** | **por Omissão** | **Automático** | **Nulo** |
 | --- | --- | --- | --- | --- | --- |
-| **codigoProduto** | Código do produto. | INT | - | Não | Não |
-| **codigo** | Código da venda. | INT | - | Não | Não |
-| **valor** | Valor do produto na venda. | DECIMAL(10,2) | - | Não | Não |
+| **matricula** | Matricula do veiculo | VARCHAR (30) | - | Não | Não |
+| **modelo** | Modelo do veiculo | VARCHAR (100) | - | Não | Não |
+| **idTipoVeiculo** | Identificação do veiculo | INT | - | Não | Não |
 
 ## Restrições de Integridade
 
@@ -308,8 +302,8 @@ Esta tabela irá guardar informações sobre os veiculos.
 
 | **Coluna(s)** |
 | --- |
-| **codigoProduto** |
-| **codigo** |
+| **matricula** |
+
 
 
 ### Referêncial (chaves estrangeiras)
