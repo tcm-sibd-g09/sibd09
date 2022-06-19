@@ -142,7 +142,7 @@ Não existem alterações
 
 ## 2ºForma Normal
 
-Já está, pois não existem ligações M:N
+Já está, pois não existem ligações N:M
 
 ## 3ºForma Normal 
 
