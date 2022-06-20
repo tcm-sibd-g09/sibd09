@@ -218,23 +218,23 @@ INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salari
 ('20', 'Gustavo', 'Assunção' , 'masculino','gustavoassuncao@gmail.com','700','25/4/1975' ),
 
 INSERT INTO `cliente` (nic, telefone, email, cartaconducao, primeironome, ultimonome) VALUES 
-('1', '960500001', 'joseantonio@hotmail.com','100000001', 'José', 'Antonio'),
-('2', '960300002', 'amonteiro@gmail.com','100500002', 'Augusto', 'Monteiro'),
-('3', '960200003', 'arnaldocosta@gmail.com','100040003', 'Arnaldo', 'Costa'),
-('4', '960000504', 'pteixeira@hotmail.com','100000704', 'Pedro', 'Teixeira'),
-('5', '960060005', 'jojoteixeira@gmail.com','100009005', 'Joana', 'Amaro'),
-('6', '960070006', 'joaquimal@gmail.com','160008006', 'Joaquim', 'Alberto'),
-('7', '960090007', 'anibalfernandes@gmail.com','100050007', 'Anibal', 'Fernandes'),
-('8', '960100008', 'xaviera@gmail.com','103000008', 'Xavier', 'Angélico'),
-('9', '960003009', 'catarinabarbosa@hotmail.com','100040009', 'Catarina','Barbosa'),
-('10', '964000010', 'dcardoso@gmail.com','102000010', 'Daniela','Cardoso'),
+('960500001', 'joseantonio@hotmail.com','100000001', 'José', 'Antonio'),
+('960300002', 'amonteiro@gmail.com','100500002', 'Augusto', 'Monteiro'),
+('960200003', 'arnaldocosta@gmail.com','100040003', 'Arnaldo', 'Costa'),
+('960000504', 'pteixeira@hotmail.com','100000704', 'Pedro', 'Teixeira'),
+('960060005', 'jojoteixeira@gmail.com','100009005', 'Joana', 'Amaro'),
+('960070006', 'joaquimal@gmail.com','160008006', 'Joaquim', 'Alberto'),
+('960090007', 'anibalfernandes@gmail.com','100050007', 'Anibal', 'Fernandes'),
+('960100008', 'xaviera@gmail.com','103000008', 'Xavier', 'Angélico'),
+('960003009', 'catarinabarbosa@hotmail.com','100040009', 'Catarina','Barbosa'),
+('964000010', 'dcardoso@gmail.com','102000010', 'Daniela','Cardoso'),
 
 INSERT INTO `alugar` (codigo, datainicial, datafinal, custo, caucao) VALUES
-('1', '5/7/2022', '10/7/2022', '200', '15'),
-('2', '13/7/2022', '20/7/2022', '300', '25'),
-('3', '17/7/2022', '24/7/2022', '350', '20'),
-('4', '25/7/2022', '2/8/2022', '400', '30'),
-('5', '29/7/2022', '8/8/2022', '600', '35'),
+('5/7/2022', '10/7/2022', '200', '15'),
+('13/7/2022', '20/7/2022', '300', '25'),
+('17/7/2022', '24/7/2022', '350', '20'),
+('25/7/2022', '2/8/2022', '400', '30'),
+('29/7/2022', '8/8/2022', '600', '35'),
 
 INSERT INTO `filial` (numero, codigopostal, localidade, rua, porta) VALUES
 ('1', '4400-395', 'VilaNovaDeGaia', 'rua Antonio Ferreira', '25'),
@@ -253,9 +253,9 @@ INSERT INTO `TipoVeiculo` (codigo, nome, valorHora) VALUES
 ('3', transportemercadoria, 10/h),
 ('4', transportepessoas, 20/h),
 
-INSERT INTO `departamento` (codigo, codigopostal, localidade , rua, porta) VALUES
-('1', '4200-200', 'Porto', 'rua Jose pereira', '20'),
-('2', '2000-100', 'Lisboa', 'rua Amaro fernandes', '50'),
+INSERT INTO `departamento` (codigopostal, localidade , rua, porta) VALUES
+('4200-200', 'Porto', 'rua Jose pereira', '20'),
+('2000-100', 'Lisboa', 'rua Amaro fernandes', '50'),
 
 INSERT INTO `veiculo` (matricula, marca, modelo) VALUES
 ('N4FG85', 'Audi', 'A2'),
@@ -268,16 +268,16 @@ INSERT INTO `veiculo` (matricula, marca, modelo) VALUES
 ('N4FG85', 'BMW', 'X2'),
 
 INSERT INTO `serviço` (idservico, valor, ndias) VALUES
-('1', '500', '10'),
-('2', '300', '5'),
-('3', '700', '15'),
-('4', '200', '4'),
-('5', '500', '8'),
-('6', '800', '18'),
-('7', '250', '4'),
-('8', '300', '7'),
-('9', '450', '10'),
-('10', '400', '9'),
+('500', '10'),
+('300', '5'),
+('700', '15'),
+('200', '4'),
+('500', '8'),
+('800', '18'),
+('250', '4'),
+('300', '7'),
+('450', '10'),
+('400', '9'),
 
 
 ---
