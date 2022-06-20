@@ -239,13 +239,13 @@ INSERT INTO `alugar` (codigo, datainicial, datafinal, custo, caucao) VALUES
 INSERT INTO `filial` (numero, codigopostal, localidade, rua, porta) VALUES
 ('1', '4400-395', 'VilaNovaDeGaia', 'rua Antonio Ferreira', '25'),
 ('2', '4000-35', 'Porto', 'rua Ruben Castro', '10'),
-('3', '3000-200', 'Braga', 'rua Pessoa', '5'),
-('4', '1400-395', 'Leria', 'rua Miranda', '30'),
-('5', '2400-395', 'Faro', 'rua Isabel Sousa', '50'),
-('6', '7400-395', 'Lisboa', 'rua Pinheiro bravo', '40'),
-('7', '1400-395', 'Bragança', 'rua de bustes', '75'),
-('8', '2000-395', 'Portalegre', 'rua Orlando texeira', '60'),
-('9', '1000-395', 'Évora', 'rua Arlindo fonseca', '3'),
+('3', '4700-200', 'Braga', 'rua Pessoa', '5'),
+('4', '2400-395', 'Leria', 'rua Miranda', '30'),
+('5', '8000-395', 'Faro', 'rua Isabel Sousa', '50'),
+('6', '1000-395', 'Lisboa', 'rua Pinheiro bravo', '40'),
+('7', '5300-395', 'Bragança', 'rua de bustes', '75'),
+('8', '7300-395', 'Portalegre', 'rua Orlando texeira', '60'),
+('9', '7000-395', 'Évora', 'rua Arlindo fonseca', '3'),
 
 INSERT INTO `TipoVeiculo` (codigo, nome, valorHora) VALUES
 ('1', transportepessoas, 15/h),
@@ -258,14 +258,14 @@ INSERT INTO `departamento` (codigo, codigopostal, localidade , rua, porta) VALUE
 ('2', '2000-100', 'Lisboa', 'rua Amaro fernandes', '50'),
 
 INSERT INTO `veiculo` (matricula, marca, modelo) VALUES
+('N4FG85', 'Audi', 'A2'),
+('N4FG85', 'Mercedes', 'Classe A'),
+('N4FG85', 'Fiat', '500'),
+('N4FG85', 'Renault', 'Clio'),
+('N4FG85', 'Peugeot', '2008'),
+('N4FG85', 'Mini', 'Cooper'),
 ('N4FG85', 'Audi', 'A4'),
-('N4FG85', 'Audi', 'A4'),
-('N4FG85', 'Audi', 'A4'),
-('N4FG85', 'Audi', 'A4'),
-('N4FG85', 'Audi', 'A4'),
-('N4FG85', 'Audi', 'A4'),
-('N4FG85', 'Audi', 'A4'),
-('N4FG85', 'Audi', 'A4'),
+('N4FG85', 'BMW', 'X2'),
 
 INSERT INTO `serviço` (idservico, valor, ndias) VALUES
 ('1', '500', '10'),
@@ -279,29 +279,22 @@ INSERT INTO `serviço` (idservico, valor, ndias) VALUES
 ('9', '450', '10'),
 ('10', '400', '9'),
 
-#### Mencione o nome do funcionário com o número Id 10:
+#### Mencione o  primeiro nome do funcionário com o nic 10:
 
-SELECT nome
-
-FROM Funcionarios
-
-WHERE Id= “10”
-
-#### Mencione todos os funcionários da filial Porto:
-
-SELECT nome
+SELECT primeironome
 
 FROM funcionarios
 
-Where Filial= “Porto”
+WHERE nic= “10”
+
 
 #### Mencione os funcionários com a função gerente:
 
-SELECT nome
+SELECT funcao
 
 FROM funcionarios
 
-WHERE Função= "Gerente"
+WHERE funcao= "Gerente"
 
 ---
 [< Previous](rebd04.md) | [^ Main](https://github.com/exemploTrabalho/reportSIBD/) | Next >
