@@ -229,58 +229,55 @@ INSERT INTO `cliente` (nic, telefone, email, cartaconducao, primeironome, ultimo
 ('9', '960003009', 'catarinabarbosa@hotmail.com','100040009', 'Catarina','Barbosa'),
 ('10', '964000010', 'dcardoso@gmail.com','102000010', 'Daniela','Cardoso'),
 
-INSERT INTO `fornecedor` (nome, id, telefonepessoal, telefoneempresa) VALUES
-('nome1', ' 1', '960000017', '200000017'),
-('nome3', ' 3', '2960000018', '200000018'),
-('nome5', '5', '960000019', '200000019');
+INSERT INTO `alugar` (codigo, datainicial, datafinal, custo, caucao) VALUES
+('1', '5/7/2022', '10/7/2022', '200', '15'),
+('2', '13/7/2022', '20/7/2022', '300', '25'),
+('3', '17/7/2022', '24/7/2022', '350', '20'),
+('4', '25/7/2022', '2/8/2022', '400', '30'),
+('5', '29/7/2022', '8/8/2022', '600', '35'),
 
+INSERT INTO `filial` (numero, codigopostal, localidade, rua, porta) VALUES
+('1', '4400-395', 'VilaNovaDeGaia', 'rua Antonio Ferreira', '25'),
+('2', '4000-35', 'Porto', 'rua Ruben Castro', '10'),
+('3', '3000-200', 'Braga', 'rua Pessoa', '5'),
+('4', '1400-395', 'Leria', 'rua Miranda', '30'),
+('5', '2400-395', 'Faro', 'rua Isabel Sousa', '50'),
+('6', '7400-395', 'Lisboa', 'rua Pinheiro bravo', '40'),
+('7', '1400-395', 'Bragança', 'rua de bustes', '75'),
+('8', '2000-395', 'Portalegre', 'rua Orlando texeira', '60'),
+('9', '1000-395', 'Évora', 'rua Arlindo fonseca', '3'),
 
-INSERT INTO `horario` (id,horafim,horainicio, diasemana ) VALUES
-('1', '10:00', '21:00', 'segundafeira'),
-('2', '10:00', '21:00', 'terçafeira'),
-('3', '10:00', '21:00', 'quartafeira'),
-('4', '10:00', '21:00', 'quintafeira'),
-('5' , '10:00', '22:00', 'sextafeira'),
-('6', '10:00', '21:00', 'sabado'),
-('7', '10:00', '18:00', 'domingo');
+INSERT INTO `TipoVeiculo` (codigo, nome, valorHora) VALUES
+('1', transportepessoas, 15/h),
+('2', transportemercadoria, 30/h),
+('3', transportemercadoria, 10/h),
+('4', transportepessoas, 20/h),
 
-INSERT INTO `entrega` (nentrega, validade, reserva , quantidade) VALUES
-('1', '21/03/2023', '45854833', '57'),
-('2', '20/09/2023', '4585454', '34'),
-('3', '10/02/2023', '21:00', '67');
+INSERT INTO `departamento` (codigo, codigopostal, localidade , rua, porta) VALUES
+('1', '4200-200', 'Porto', 'rua Jose pereira', '20'),
+('2', '2000-100', 'Lisboa', 'rua Amaro fernandes', '50'),
 
-INSERT INTO `produto` (nome, tipoproduto, codigo , validade) VALUES
-('nome1 ', 'maquilhagem', '25894', '10/02/2024'),
-('nome2', 'comestico', '5849', '10/02/2024'),
-('nome3 ', 'perfumes', '94924', '15/06/2024'),
-('nome4 ', 'maquilhagem', '67324', '15/06/2024'),
-('nome5 ', 'perfumes', '53224', '20/01/2025'),
-('nome6 ', 'comestico', '9524', '28/06/2024'),
-('nome7 ', 'perfumes', '94924', '19/04/2024'),
-('nome8 ', 'maquilhagem', '22524', '03/11/2024'),
-('nome9 ', 'comesticos', '58424', '15/06/2024'),
-('nome10 ', 'perfumes', '94924', '15/11/2024'),
-('nome11 ', 'perfumes', '94924', '12/10/2024'),
-('nome12 ', 'comesticos', '64334', '01/02/2024'),
-('nome13 ', 'perfumes', '32114', '02/03/2024'),
-('nome14 ', 'maquilhagem', '785334', '08/08/2024'),
-('nome15 ', 'perfumes', '235753', '1/09/2025'),
-('nome16 ', 'perfumes', '5632', '12/09/2024'),
-('nome17 ', 'comesticos', '49493', '15/06/2024'),
-('nome18 ', 'comesticos', '34532', '02/06/2024'),
-('nome19 ', 'perfumes', '753432', '11/12/2024');
+INSERT INTO `veiculo` (matricula, marca, modelo) VALUES
+('N4FG85', 'Audi', 'A4'),
+('N4FG85', 'Audi', 'A4'),
+('N4FG85', 'Audi', 'A4'),
+('N4FG85', 'Audi', 'A4'),
+('N4FG85', 'Audi', 'A4'),
+('N4FG85', 'Audi', 'A4'),
+('N4FG85', 'Audi', 'A4'),
+('N4FG85', 'Audi', 'A4'),
 
-INSERT INTO `turno` (id, partedia, hora) VALUES
-('1', 'manha', '09:30'),
-('2', 'tarde', '13:00'),
-('3', 'tarde', '17:00'),
-('4', 'noite', '19:00'),
-('5', 'noite', '21:00');
-
-INSERT INTO `formaçao` (nome, tipoformaçao) VALUES
-('nome1', 'maquilhagem'),
-('nome2', 'cosmestica'),
-('nome3', 'perfumaria');
+INSERT INTO `serviço` (idservico, valor, ndias) VALUES
+('1', '500', '10'),
+('2', '300', '5'),
+('3', '700', '15'),
+('4', '200', '4'),
+('5', '500', '8'),
+('6', '800', '18'),
+('7', '250', '4'),
+('8', '300', '7'),
+('9', '450', '10'),
+('10', '400', '9'),
 
 #### Mencione o nome do funcionário com o número Id 10:
 
