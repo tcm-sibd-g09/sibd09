@@ -135,6 +135,10 @@ FUNCIONÁRIO (#Código->Departamento, #numero->Filial, <ins>nic</ins>, endereço
 
 VEICULO (#Código->TipoDeVeiculo, <ins>matricula</ins>, marca, modelo, stock)
 
+DEPARTAMENTO (<ins>código</ins>,#código postal->CódigoPostais, rua, porta)
+
+FILIAL (<ins>numero</ins>,#código postal->CódigoPostais, rua, porta)
+
 ## 1ºForma Normal 1ºParte (Compostos - atributos)
 
 CLIENTE (<ins>nic</ins>, telefone, email, cartaconducao, PrimeiroNome, UltimoNome)
