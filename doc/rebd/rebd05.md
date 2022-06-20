@@ -218,16 +218,16 @@ INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salari
 ('20', 'Gustavo', 'Assunção' , 'masculino','gustavoassuncao@gmail.com','700','25/4/1975' ),
 
 INSERT INTO `cliente` (nic, telefone, email, cartaconducao, primeironome, ultimonome) VALUES 
-('1', '960500001', 'joseantonio@gmail.com','100000001', 'José', 'Antonio'),
-('2', '960300002', 'joseantonio@gmail.com','100000001', 'Augusto', 'Monteiro'),
-('3', '960200003', 'joseantonio@gmail.com','100000001', 'Arnaldo', 'Costa'),
-('4', '960000504', 'joseantonio@gmail.com','100000001', 'Pedro', 'Teixeira'),
-('5', '960060005', 'joseantonio@gmail.com','100000001', 'Joana', 'Amaro'),
-('6', '960070006', 'joseantonio@gmail.com','100000001', 'Joaquim', 'Alberto'),
-('7', '960090007', 'joseantonio@gmail.com','100000001', 'Anibal', 'Fernandes'),
-('8', '960100008', 'joseantonio@gmail.com','100000001', 'Xavier', 'Angélico'),
-('9', '960003009', 'joseantonio@gmail.com','100000001', 'Catarina','Barbosa'),
-('10', '964000010', 'joseantonio@gmail.com','100000001', 'Daniela','Cardoso'),
+('1', '960500001', 'joseantonio@hotmail.com','100000001', 'José', 'Antonio'),
+('2', '960300002', 'amonteiro@gmail.com','100500002', 'Augusto', 'Monteiro'),
+('3', '960200003', 'arnaldocosta@gmail.com','100040003', 'Arnaldo', 'Costa'),
+('4', '960000504', 'pteixeira@hotmail.com','100000704', 'Pedro', 'Teixeira'),
+('5', '960060005', 'jojoteixeira@gmail.com','100009005', 'Joana', 'Amaro'),
+('6', '960070006', 'joaquimal@gmail.com','160008006', 'Joaquim', 'Alberto'),
+('7', '960090007', 'anibalfernandes@gmail.com','100050007', 'Anibal', 'Fernandes'),
+('8', '960100008', 'xaviera@gmail.com','103000008', 'Xavier', 'Angélico'),
+('9', '960003009', 'catarinabarbosa@hotmail.com','100040009', 'Catarina','Barbosa'),
+('10', '964000010', 'dcardoso@gmail.com','102000010', 'Daniela','Cardoso'),
 
 INSERT INTO `fornecedor` (nome, id, telefonepessoal, telefoneempresa) VALUES
 ('nome1', ' 1', '960000017', '200000017'),
