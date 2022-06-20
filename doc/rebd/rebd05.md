@@ -279,22 +279,6 @@ INSERT INTO `serviço` (idservico, valor, ndias) VALUES
 ('9', '450', '10'),
 ('10', '400', '9'),
 
-#### Mencione o  primeiro nome do funcionário com o nic 10:
-
-SELECT primeironome
-
-FROM funcionarios
-
-WHERE nic= “10”
-
-
-#### Mencione os funcionários com a função gerente:
-
-SELECT funcao
-
-FROM funcionarios
-
-WHERE funcao= "Gerente"
 
 ---
 [< Previous](rebd04.md) | [^ Main](https://github.com/exemploTrabalho/reportSIBD/) | Next >
