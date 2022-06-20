@@ -98,8 +98,8 @@ Não existe Entidades Fracas
 |----------|-------|----------|
 |<ins>Código</ins>|nome|ValorHora|
 
-|FUNCIONÁRIO  |         |          |         |                        |           |       |
-|---------|---------|----------|---------|------------------------|-----------|--------|
+|FUNCIONÁRIO  |         |          |         |                        |           |       |          |           |
+|---------|---------|----------|---------|------------------------|-----------|--------|--------|----------|
 |<ins>nic</ins>|endereço|dn|sexo|PrimeiroNome|UltimoNome|Salário|#Código->Departamento|#numero->Filial|
 
 |DEPARTAMENTO|    |         |         |         |
