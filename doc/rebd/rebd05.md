@@ -205,17 +205,29 @@ INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salari
 ('7', 'Fernando', 'Alonso' , 'masculino','fernandinhos@gmail.com','700','9/8/1978' ),
 ('8', 'Joaquim', 'Albuquerque' , 'masculino','juaquindelpasso@gmail.com','700','4/3/1979' ),
 ('9', 'Telma', 'Barros' , 'feminino','telmaluca@gmail.com','600','1/9/1995' ),
+('10', 'Goncalo', 'Carvalho' , 'masculino','goncacarvalho@gmail.com','800','5/4/1990' ),
+('11', 'Rosário', 'Graça' , 'feminino','rosariog@gmail.com','750','10/9/1985' ),
+('12', 'Bruna', 'Silva' , 'feminino','brunas@gmail.com','600','20/2/1980' ),
+('13', 'Pedro', 'Cardoso' , 'masculino','pedrocardoso@gmail.com','800','2/1/1993' ),
+('14', 'Joel', 'Costa' , 'masculino','joelcosta@gmail.com','600','7/10/1998' ),
+('15', 'Tatiana', 'Barbosa' , 'feminino','tatianabarbosa@gmail.com','650','15/9/1982' ),
+('16', 'Tiago', 'Teixeira' , 'masculino','tiagoteixeirinha@gmail.com','800','10/4/1995' ),
+('17', 'Rafael', 'Goncalves' , 'masculino','rafagoncalves@gmail.com','800','18/3/1990' ),
+('18', 'César', 'Novais' , 'masculino','cesarn@gmail.com','600','17/8/1993' ),
+('19', 'Sara', 'Miranda' , 'feminino','saramiranda@gmail.com','700','1/1/1984' ),
+('20', 'Gustavo', 'Assunção' , 'masculino','gustavoassuncao@gmail.com','700','25/4/1975' ),
 
 INSERT INTO `cliente` (nic, telefone, email, cartaconducao, primeironome, ultimonome) VALUES 
-('1', '960000001', 'joseantonio@gmail.com','100000001', 'José', 'Antonio'),
-('comesticos', '2'),
-('perfumaria', '3'),
-('caixa', '4'),
-('reposiçao', '5'),
-('gerencia', '6'),
-('limpeza', '7'),
-('fornecedores', '8');
-
+('1', '960500001', 'joseantonio@gmail.com','100000001', 'José', 'Antonio'),
+('2', '960300002', 'joseantonio@gmail.com','100000001', 'Augusto', 'Monteiro'),
+('3', '960200003', 'joseantonio@gmail.com','100000001', 'Arnaldo', 'Costa'),
+('4', '960000504', 'joseantonio@gmail.com','100000001', 'Pedro', 'Teixeira'),
+('5', '960060005', 'joseantonio@gmail.com','100000001', 'Joana', 'Amaro'),
+('6', '960070006', 'joseantonio@gmail.com','100000001', 'Joaquim', 'Alberto'),
+('7', '960090007', 'joseantonio@gmail.com','100000001', 'Anibal', 'Fernandes'),
+('8', '960100008', 'joseantonio@gmail.com','100000001', 'Xavier', 'Angélico'),
+('9', '960003009', 'joseantonio@gmail.com','100000001', 'Catarina','Barbosa'),
+('10', '964000010', 'joseantonio@gmail.com','100000001', 'Daniela','Cardoso'),
 
 INSERT INTO `fornecedor` (nome, id, telefonepessoal, telefoneempresa) VALUES
 ('nome1', ' 1', '960000017', '200000017'),
