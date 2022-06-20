@@ -47,25 +47,7 @@ MODELOS (<ins>modelo</ins>, marca)
 
 ### Passo 4: Associações N:M
 
-CLIENTE (<ins>nic</ins>, telefone, email, cartaconducao, primeironome, ultimonome)
-
-ALUGAR (<ins>código</ins>, datainicial, datafinal, custo, caução, #nic->Cliente, #idserviço->serviço, #matricula->veiculo, #numero->Filial)
-
-FILIAL (<ins>numero</ins>, rua, porta, localidade, #códigopostal->CódigoPostais)
-
-FUNCIONÁRIO (<ins>nic</ins>, endereço, dn, sexo, primeironome, ultimonome, salário, #Código->Departamento, #numero->Filial)
-
-TIPOVEICULO (<ins>Código</ins>, nome, valorHora)
-
-DEPARTAMENTO (<ins>código</ins>, rua, porta, localidade, #CódigoPostal->CódigoPostais)
-
-VEICULO (<ins>matricula</ins>, #modelo->Modelos, #Código->TipoDeVeiculo)
-
-SERVIÇO (<ins>idserviço</ins>, valor, ndias)
-
-CÓDIGOPOSTAIS (<ins>CódigoPostal</ins>, localidade)
-
-MODELOS (<ins>modelo</ins>, marca)
+Não exuste
 
 ### Passo 5: Atributo Multivalor
 
