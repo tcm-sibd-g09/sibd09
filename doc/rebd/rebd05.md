@@ -196,79 +196,154 @@ COLLATE = utf8mb4_0900_ai_ci;
 ### Tabela Funcionário
 
 INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('1', 'Antonio', 'Mendes' , 'masculino','antoniom@gmail.com','700','10/10/1980' ),
+
 INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('2', 'Barbara', 'Mendonça' , 'feminino','barbaramends@gmail.com','600','2/7/1998' ),
+
 INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('3', 'Carlos', 'Joel' , 'masculino','carlitosjoel@hotmail.com','600','1/1/1970' ),
+
 INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('4', 'Diogo', 'Silva' , 'masculino','daizergamer@gmail.com','700','4/5/1994' ),
+
 INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('5', 'Deolinda', 'Castro' , 'feminino','deolindinha@gmail.com','700','9/2/1989' ),
+
 INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('6', 'Estrela', 'Novais' , 'feminino','atuaestrela909@hotmail.com','700','4/7/1999' ),
+
+
 INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('7', 'Fernando', 'Alonso' , 'masculino','fernandinhos@gmail.com','700','9/8/1978' ),
+
 INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('8', 'Joaquim', 'Albuquerque' , 'masculino','juaquindelpasso@gmail.com','700','4/3/1979' ),
+
 INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('9', 'Telma', 'Barros' , 'feminino','telmaluca@gmail.com','600','1/9/1995' ),
+
 INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('10', 'Goncalo', 'Carvalho' , 'masculino','goncacarvalho@gmail.com','800','5/4/1990' ),
+
 INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('11', 'Rosário', 'Graça' , 'feminino','rosariog@gmail.com','750','10/9/1985' ),
+
 INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('12', 'Bruna', 'Silva' , 'feminino','brunas@gmail.com','600','20/2/1980' ),
+
 INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('13', 'Pedro', 'Cardoso' , 'masculino','pedrocardoso@gmail.com','800','2/1/1993' ),
+
 INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('14', 'Joel', 'Costa' , 'masculino','joelcosta@gmail.com','600','7/10/1998' ),
+
 INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('15', 'Tatiana', 'Barbosa' , 'feminino','tatianabarbosa@gmail.com','650','15/9/1982' ),
+
 INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('16', 'Tiago', 'Teixeira' , 'masculino','tiagoteixeirinha@gmail.com','800','10/4/1995' ),
+
 INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('17', 'Rafael', 'Goncalves' , 'masculino','rafagoncalves@gmail.com','800','18/3/1990' ),
+
 INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('18', 'César', 'Novais' , 'masculino','cesarn@gmail.com','600','17/8/1993' ),
+
 INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('19', 'Sara', 'Miranda' , 'feminino','saramiranda@gmail.com','700','1/1/1984' ),
+
 INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('20', 'Gustavo', 'Assunção' , 'masculino','gustavoassuncao@gmail.com','700','25/4/1975' ),
 
+### Tabela Cliente
+
 INSERT INTO `cliente` (nic, telefone, email, cartaconducao, primeironome, ultimonome) VALUES ('960500001', 'joseantonio@hotmail.com','100000001', 'José', 'Antonio'),
+
 INSERT INTO `cliente` (nic, telefone, email, cartaconducao, primeironome, ultimonome) VALUES ('960300002', 'amonteiro@gmail.com','100500002', 'Augusto', 'Monteiro'),
+
 INSERT INTO `cliente` (nic, telefone, email, cartaconducao, primeironome, ultimonome) VALUES ('960200003', 'arnaldocosta@gmail.com','100040003', 'Arnaldo', 'Costa'),
+
 INSERT INTO `cliente` (nic, telefone, email, cartaconducao, primeironome, ultimonome) VALUES ('960000504', 'pteixeira@hotmail.com','100000704', 'Pedro', 'Teixeira'),
+
 INSERT INTO `cliente` (nic, telefone, email, cartaconducao, primeironome, ultimonome) VALUES ('960060005', 'jojoteixeira@gmail.com','100009005', 'Joana', 'Amaro'),
+
 INSERT INTO `cliente` (nic, telefone, email, cartaconducao, primeironome, ultimonome) VALUES ('960070006', 'joaquimal@gmail.com','160008006', 'Joaquim', 'Alberto'),
+
 INSERT INTO `cliente` (nic, telefone, email, cartaconducao, primeironome, ultimonome) VALUES ('960090007', 'anibalfernandes@gmail.com','100050007', 'Anibal', 'Fernandes'),
+
 INSERT INTO `cliente` (nic, telefone, email, cartaconducao, primeironome, ultimonome) VALUES ('960100008', 'xaviera@gmail.com','103000008', 'Xavier', 'Angélico'),
+
 INSERT INTO `cliente` (nic, telefone, email, cartaconducao, primeironome, ultimonome) VALUES ('960003009', 'catarinabarbosa@hotmail.com','100040009', 'Catarina','Barbosa'),
+
 INSERT INTO `cliente` (nic, telefone, email, cartaconducao, primeironome, ultimonome) VALUES ('964000010', 'dcardoso@gmail.com','102000010', 'Daniela','Cardoso'),
 
+### Tabela alugar
+
 INSERT INTO `alugar` (codigo, datainicial, datafinal, custo, caucao) VALUES ('5/7/2022', '10/7/2022', '200', '15'),
+
 INSERT INTO `alugar` (codigo, datainicial, datafinal, custo, caucao) VALUES ('13/7/2022', '20/7/2022', '300', '25'),
+
 INSERT INTO `alugar` (codigo, datainicial, datafinal, custo, caucao) VALUES ('17/7/2022', '24/7/2022', '350', '20'),
+
 INSERT INTO `alugar` (codigo, datainicial, datafinal, custo, caucao) VALUES ('25/7/2022', '2/8/2022', '400', '30'),
+
 INSERT INTO `alugar` (codigo, datainicial, datafinal, custo, caucao) VALUES ('29/7/2022', '8/8/2022', '600', '35'),
 
+### Tabela filial
+
 INSERT INTO `filial` (numero, codigopostal, localidade, rua, porta) VALUES ('1', '4400-395', 'VilaNovaDeGaia', 'rua Antonio Ferreira', '25'),
+
 INSERT INTO `filial` (numero, codigopostal, localidade, rua, porta) VALUES ('2', '4000-35', 'Porto', 'rua Ruben Castro', '10'),
+
 INSERT INTO `filial` (numero, codigopostal, localidade, rua, porta) VALUES ('3', '4700-200', 'Braga', 'rua Pessoa', '5'),
+
 INSERT INTO `filial` (numero, codigopostal, localidade, rua, porta) VALUES ('4', '2400-395', 'Leria', 'rua Miranda', '30'),
+
 INSERT INTO `filial` (numero, codigopostal, localidade, rua, porta) VALUES ('5', '8000-395', 'Faro', 'rua Isabel Sousa', '50'),
+
 INSERT INTO `filial` (numero, codigopostal, localidade, rua, porta) VALUES ('6', '1000-395', 'Lisboa', 'rua Pinheiro bravo', '40'),
+
 INSERT INTO `filial` (numero, codigopostal, localidade, rua, porta) VALUES ('7', '5300-395', 'Bragança', 'rua de bustes', '75'),
+
 INSERT INTO `filial` (numero, codigopostal, localidade, rua, porta) VALUES ('8', '7300-395', 'Portalegre', 'rua Orlando texeira', '60'),
+
 INSERT INTO `filial` (numero, codigopostal, localidade, rua, porta) VALUES ('9', '7000-395', 'Évora', 'rua Arlindo fonseca', '3'),
 
+### Tabela TipoVeiculo
+
 INSERT INTO `TipoVeiculo` (codigo, nome, valorHora) VALUES ('1', transportepessoas, 15/h),
+
 INSERT INTO `TipoVeiculo` (codigo, nome, valorHora) VALUES ('2', transportemercadoria, 30/h),
+
 INSERT INTO `TipoVeiculo` (codigo, nome, valorHora) VALUES ('3', transportemercadoria, 10/h),
+
 INSERT INTO `TipoVeiculo` (codigo, nome, valorHora) VALUES ('4', transportepessoas, 20/h),
 
+### Tabela Departamento
+
 INSERT INTO `departamento` (codigopostal, localidade , rua, porta) VALUES ('4200-200', 'Porto', 'rua Jose pereira', '20'),
+
 INSERT INTO `departamento` (codigopostal, localidade , rua, porta) VALUES ('2000-100', 'Lisboa', 'rua Amaro fernandes', '50'),
 
+### Tabela Veiculo
+
 INSERT INTO `veiculo` (matricula, marca, modelo) VALUES ('N4FG85', 'Audi', 'A2'),
+
 INSERT INTO `veiculo` (matricula, marca, modelo) VALUES ('N4FG85', 'Mercedes', 'Classe A'),
+
 INSERT INTO `veiculo` (matricula, marca, modelo) VALUES ('N4FG85', 'Fiat', '500'),
+
 INSERT INTO `veiculo` (matricula, marca, modelo) VALUES ('N4FG85', 'Renault', 'Clio'),
+
 INSERT INTO `veiculo` (matricula, marca, modelo) VALUES ('N4FG85', 'Peugeot', '2008'),
+
 INSERT INTO `veiculo` (matricula, marca, modelo) VALUES ('N4FG85', 'Mini', 'Cooper'),
+
 INSERT INTO `veiculo` (matricula, marca, modelo) VALUES ('N4FG85', 'Audi', 'A4'),
+
 INSERT INTO `veiculo` (matricula, marca, modelo) VALUES ('N4FG85', 'BMW', 'X2'),
 
+### Tabela Serviço
+
 INSERT INTO `serviço` (idservico, valor, ndias) VALUES ('500', '10'),
+
 INSERT INTO `serviço` (idservico, valor, ndias) VALUES ('300', '5'),
+
 INSERT INTO `serviço` (idservico, valor, ndias) VALUES ('700', '15'),
+
 INSERT INTO `serviço` (idservico, valor, ndias) VALUES ('200', '4'),
+
 INSERT INTO `serviço` (idservico, valor, ndias) VALUES ('500', '8'),
+
 INSERT INTO `serviço` (idservico, valor, ndias) VALUES ('800', '18'),
+
 INSERT INTO `serviço` (idservico, valor, ndias) VALUES ('250', '4'),
+
 INSERT INTO `serviço` (idservico, valor, ndias) VALUES ('300', '7'),
+
 INSERT INTO `serviço` (idservico, valor, ndias) VALUES ('450', '10'),
+
 INSERT INTO `serviço` (idservico, valor, ndias) VALUES ('400', '9'),
 
 
