@@ -16,7 +16,7 @@ TIPOVEICULO(<ins>Código</ins>, nome, valorHora)
 
 DEPARTAMENTO (<ins>código</ins>,código postal, localidade, rua, porta)
 
-VEICULO (<ins>matricula</ins>, marca, modelo, stock)
+VEICULO (<ins>matricula</ins>, marca, modelo)
 
 SERVIÇO (<ins>idserviço</ins>, valor, ndias)
 
@@ -89,9 +89,9 @@ Não existe Entidades Fracas
 |<ins>código</ins>      |rua|porta|#Códigopostal->CódigoPostais|localidade|
 
 
-|VEICULO|    |           |        |
-|-------|----|-----------|--------|
-|<ins>matricula</ins>|stock|#modelo->Modelos|#Código->TipoDeVeiculo|
+|VEICULO|    |        |
+|-------|----|--------|
+|<ins>matricula</ins>|#modelo->Modelos|#Código->TipoDeVeiculo|
 
 |SERVIÇO    |        |       |  
 |------------|--------|-------|
@@ -115,7 +115,7 @@ ALUGAR ( #nic->Cliente, #idserviço->serviço, #matricula->veiculo, #numero->Fil
 
 FUNCIONÁRIO (#Código->Departamento, #numero->Filial, <ins>nic</ins>, endereço, dn, sexo, PrimeiroNome, UltimoNome, salário)
 
-VEICULO (#Código->TipoDeVeiculo, <ins>matricula</ins>, marca, modelo, stock)
+VEICULO (#Código->TipoDeVeiculo, <ins>matricula</ins>, marca, modelo)
 
 DEPARTAMENTO (<ins>código</ins>,#código postal->CódigoPostais, rua, porta)
 
@@ -135,7 +135,7 @@ TIPOVEICULO(<ins>Código</ins>, nome, valorHora)
 
 DEPARTAMENTO (<ins>código</ins>,código postal, localidade, rua, porta)
 
-VEICULO (<ins>matricula</ins>, marca, modelo, stock, #Código->TipoDeVeiculo)
+VEICULO (<ins>matricula</ins>, marca, modelo,#Código->TipoDeVeiculo)
 
 SERVIÇO (<ins>idserviço</ins>, valor, ndias)
 
@@ -158,7 +158,7 @@ TIPOVEICULO(<ins>Código</ins>, nome, valorHora)
 
 DEPARTAMENTO (<ins>código</ins>,código postal, localidade, rua, porta)
 
-VEICULO (<ins>matricula</ins>, marca, modelo, stock, #Código->TipoDeVeiculo)
+VEICULO (<ins>matricula</ins>, marca, modelo,#Código->TipoDeVeiculo)
 
 SERVIÇO (<ins>idserviço</ins>, valor, ndias)
 
@@ -176,7 +176,7 @@ TIPOVEICULO(<ins>Código</ins>, nome, valorHora)
 
 DEPARTAMENTO (<ins>código</ins>,#código postal->CódigoPostais, rua, porta)
 
-VEICULO (<ins>matricula</ins>, #modelo->Modelos, stock, #Código->TipoDeVeiculo)
+VEICULO (<ins>matricula</ins>, #modelo->Modelos,#Código->TipoDeVeiculo)
 
 SERVIÇO (<ins>idserviço</ins>, valor, ndias)
 
@@ -186,25 +186,7 @@ MODELOS (<ins>Modelo</ins>, marca)
 
 ## Forma Normal de Boyce-Codd 
 
-CLIENTE (<ins>nic</ins>, telefone, email, cartaconducao, PrimeiroNome, UltimoNome)
-
-ALUGAR (<ins>código</ins>, datainicial, datafinal, custo, caução, #nic->Cliente, #idserviço->serviço, #matricula->veiculo, #numero->Filial)
-
-FILIAL (<ins>numero</ins>,#código postal->CódigoPostais, rua, porta)
-
-FUNCIONÁRIO (<ins>nic</ins>, endereço, dn, sexo, PrimeiroNome, UltimoNome, salário, #Código->Departamento, #numero->Filial)
-
-TIPOVEICULO(<ins>Código</ins>, nome, valorHora)
-
-DEPARTAMENTO (<ins>código</ins>,#código postal->CódigoPostais, rua, porta)
-
-VEICULO(<ins>matricula</ins>, #modelo->Modelos, stock, #Código->TipoDeVeiculo)
-
-SERVIÇO (<ins>idserviço</ins>, valor, ndias)
-
-CÓDIGOPOSTAIS (<ins>CódigoPostal</ins>, localidade)
-
-MODELOS (<ins>Modelo</ins>, marca)
+Não existem alterações
 
 ## 4ºForma Normal 
 
