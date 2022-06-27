@@ -47,7 +47,7 @@ MODELOS (<ins>modelo</ins>, marca)
 
 ### Passo 4: Associações N:M
 
-Não exuste
+Não existe
 
 ### Passo 5: Atributo Multivalor
 
