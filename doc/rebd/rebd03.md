@@ -23,7 +23,7 @@ SERVIÇO (<ins>idserviço</ins>, valor, ndias)
 ### Passo 2: Associações 1:1
 Não existe ligações 1:1
 
-#### Passo 3: Associações 1:N
+### Passo 3: Associações 1:N
 
 CLIENTE (<ins>nic</ins>, telefone, email, cartaconducao, primeironome, ultimonome)
 
