@@ -111,31 +111,37 @@ Não existe Entidades Fracas
 
 ### Dependências Funcionais:
 
-ALUGAR ( #nic->Cliente, #idserviço->serviço, #matricula->veiculo, #numero->Filial, <ins>código</ins>, datainicial, datafinal, custo, caução)
+nicCliente -> telefone, email, cartaconducao, primeiroNome, ultimoNome
 
-FUNCIONÁRIO (#Código->Departamento, #numero->Filial, <ins>nic</ins>, endereço, dn, sexo, PrimeiroNome, UltimoNome, salário)
+codigoAluguer -> dataInicial,dataFinal, custo, caucao
 
-VEICULO (#Código->TipoDeVeiculo, <ins>matricula</ins>, marca, modelo)
+numero -> codigoPostal, rua, porta
 
-DEPARTAMENTO (<ins>código</ins>,#código postal->CódigoPostais, rua, porta)
+nicFuncionario -> endereco, dn, sexo, PrimeiroNome, UltimoNome, salario
 
-FILIAL (<ins>numero</ins>,#código postal->CódigoPostais, rua, porta)
+codigoVeiculo -> nome, valorHora
+
+codigoDepartamento -> codigoPostal, localidade, rua, porta
+
+Matricula -> marca, modelo
+
+idServico -> valor, nDias
 
 ## 1ºForma Normal 1ºParte (Compostos - atributos)
 
 CLIENTE (<ins>nic</ins>, telefone, email, cartaconducao, PrimeiroNome, UltimoNome)
 
-ALUGAR (<ins>código</ins>, datainicial, datafinal, custo, caução, #nic->Cliente, #idserviço->serviço, #matricula->veiculo, #numero->Filial)
+ALUGAR (<ins>codigo</ins>, dataInicial, dataFinal, custo, caucao, #nic->Cliente, #idserviço->serviço, #matricula->veiculo, #numero->Filial)
 
-FILIAL (<ins>numero</ins>,código postal, localidade, rua, porta)
+FILIAL (<ins>numero</ins>,codigoPostal, localidade, rua, porta)
 
-FUNCIONÁRIO (<ins>nic</ins>, endereço, dn, sexo, PrimeiroNome, UltimoNome, salário, #Código->Departamento, #numero->Filial)
+FUNCIONÁRIO (<ins>nic</ins>, endereco, dn, sexo, PrimeiroNome, UltimoNome, salario, #Código->Departamento, #numero->Filial)
 
-TIPOVEICULO(<ins>Código</ins>, nome, valorHora)
+TIPOVEICULO(<ins>Codigo</ins>, nome, valorHora)
 
-DEPARTAMENTO (<ins>código</ins>,código postal, localidade, rua, porta)
+DEPARTAMENTO (<ins>codigo</ins>,codigoPostal, localidade, rua, porta)
 
-VEICULO (<ins>matricula</ins>, marca, modelo,#Código->TipoDeVeiculo)
+VEICULO (<ins>matricula</ins>, marca, modelo, #Código->TipoDeVeiculo)
 
 SERVIÇO (<ins>idserviço</ins>, valor, ndias)
 
