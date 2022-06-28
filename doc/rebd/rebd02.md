@@ -31,7 +31,7 @@ Estacionado (VEICULO, FILIAL) N:1 P/T
 
 Escolha (VEICULO, TIPOVEICULO) N:1 T/P
 
-TipoDeServiço(ALUGAR, SERVIÇO) 1:1 P/P
+TipoDeServiço(SERVIÇO, ALUGAR) 1:N P/P
 
 TrabalhaEm (DEPARTAMENTO, FUNCIONÁRIO) 1:N P/T
 
