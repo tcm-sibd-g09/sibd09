@@ -446,65 +446,125 @@ insert into Departamento (rua, porta, codigoPostal) values ('Graedel', '06427', 
 ### Tabela Filial
 
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Sherman', '55', 10, 1);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Hagan', '27', 20, 2);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Kenwood', '84', 30, 3);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Bowman', '10291', 40, 4);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Di Loreto', '5', 50, 5);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Vidon', '167', 60, 6);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Hansons', '0', 70, 7);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Upham', '44632', 80, 8);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Village', '71', 90, 9);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Melrose', '9247', 100, 10);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Kenwood', '7694', 10, 11);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Oak', '8634', 20, 12);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Sauthoff', '6', 30, 13);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Westridge', '428', 40, 14);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Melrose', '35671', 50, 15);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Victoria', '9196', 60, 16);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Coolidge', '682', 70, 17);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Ridgeview', '657', 80, 18);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Kinsman', '34', 90, 19);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Sloan', '15', 100, 20);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Hoepker', '139', 10, 21);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Waxwing', '94432', 20, 22);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Cherokee', '20717', 30, 23);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Shasta', '69', 40, 24);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Donald', '79', 50, 25);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Morningstar', '5769', 60, 26);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Jenifer', '9628', 70, 27);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Armistice', '8511', 80, 28);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Surrey', '1', 90, 29);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Pepper Wood', '590', 100, 30);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Elmside', '927', 10, 1);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Vahlen', '694', 20, 2);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Del Mar', '48062', 30, 3);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Burning Wood', '62', 40, 4);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('5th', '00', 50, 5);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Eastwood', '090', 60, 6);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Gerald', '5688', 70, 7);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Bay', '62126', 80, 8);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Hovde', '10', 90, 9);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Graceland', '429', 100, 10);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Everett', '22081', 10, 11);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Starling', '436', 20, 12);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Ridge Oak', '185', 30, 13);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Hintze', '29', 40, 14);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Londonderry', '825', 50, 15);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Lunder', '9220', 60, 16);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Sunbrook', '741', 70, 17);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Sunnyside', '930', 80, 18);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Susan', '531', 90, 19);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Riverside', '2903', 100, 20);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Tennessee', '769', 10, 21);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Weeping Birch', '550', 20, 22);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Talmadge', '9751', 30, 23);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Vernon', '67', 40, 24);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Killdeer', '339', 50, 25);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Texas', '5944', 60, 26);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Mesta', '396', 70, 27);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Annamark', '49959', 80, 28);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Chinook', '481', 90, 29);
+
 insert into filial (rua, porta, codigoPostalFilial, codigoDepartamento) values ('Cody', '162', 100, 30);
+
 
 ### Tabela Funcionario
 
