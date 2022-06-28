@@ -29,6 +29,9 @@ Aluga (Cliente, tipo de serviço) 1:1
 
 
 
+
+
+
 ### DIAGRAMA 
 
  ![Diagrama1](https://user-images.githubusercontent.com/96230913/171955084-6d0b55c6-be83-45d4-86d6-e53636172a87.png)
