@@ -39,8 +39,6 @@ Aluga (Cliente, tipo de serviço) 1:1
 
 
 
-NOTA: Cada entidade-tipo e cada associação devem ter um pequeno texto – um ou dois parágrafos – para descrever esse elemento do modelo e os seus atributos)
-
 ## Regras de negócio adicionais (Restrições)
 1- Falta de stock de veiculos
 2- Falta de profissionais para efetuar o transporte do serviço
