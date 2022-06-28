@@ -1058,7 +1058,15 @@ insert into alugar (dataInicial, dataFinal, custo, caucao, nicCliente, idServico
 
 
 
-### Menciona 
+### Menciona todos os números de telefone dos clientes
+
+Select telefone
+from cliente;
+
+### Menciona todos os números de telefone dos clientes
+
+
+
 ---
 [< Previous](rebd04.md) | [^ Main](https://github.com/exemploTrabalho/reportSIBD/) | Next >
 :--- | :---: | ---: 
