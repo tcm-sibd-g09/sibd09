@@ -193,158 +193,235 @@ COLLATE = utf8mb4_0900_ai_ci;
 
 ## DML
 
-### Tabela Funcionário
+### Tabela Modelos
 
-INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('1', 'Antonio', 'Mendes' , 'masculino','antoniom@gmail.com','700','10/10/1980' ),
+insert into modelos (modelo, marca) values (1, 'Mercedes');
 
-INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('2', 'Barbara', 'Mendonça' , 'feminino','barbaramends@gmail.com','600','2/7/1998' ),
+insert into modelos (modelo, marca) values (2, 'Volvo');
 
-INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('3', 'Carlos', 'Joel' , 'masculino','carlitosjoel@hotmail.com','600','1/1/1970' ),
+insert into modelos (modelo, marca) values (3, 'Ferrari');
 
-INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('4', 'Diogo', 'Silva' , 'masculino','daizergamer@gmail.com','700','4/5/1994' ),
+insert into modelos (modelo, marca) values (4, 'Bmw');
 
-INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('5', 'Deolinda', 'Castro' , 'feminino','deolindinha@gmail.com','700','9/2/1989' ),
-
-INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('6', 'Estrela', 'Novais' , 'feminino','atuaestrela909@hotmail.com','700','4/7/1999' ),
+insert into modelos (modelo, marca) values (5, 'Audi');
 
 
-INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('7', 'Fernando', 'Alonso' , 'masculino','fernandinhos@gmail.com','700','9/8/1978' ),
+### Tabela tipoVeiculo
 
-INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('8', 'Joaquim', 'Albuquerque' , 'masculino','juaquindelpasso@gmail.com','700','4/3/1979' ),
+insert into tipoveiculo (codigo, nome, valorHora) values (1, 'Pesado passageiros', 10);
 
-INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('9', 'Telma', 'Barros' , 'feminino','telmaluca@gmail.com','600','1/9/1995' ),
 
-INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('10', 'Goncalo', 'Carvalho' , 'masculino','goncacarvalho@gmail.com','800','5/4/1990' ),
+insert into tipoveiculo (codigo, nome, valorHora) values (2, 'Pesado mercadorias', 20);
 
-INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('11', 'Rosário', 'Graça' , 'feminino','rosariog@gmail.com','750','10/9/1985' ),
+insert into tipoveiculo (codigo, nome, valorHora) values (3, 'Ligeiro mercadorias', 15);
 
-INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('12', 'Bruna', 'Silva' , 'feminino','brunas@gmail.com','600','20/2/1980' ),
+insert into tipoveiculo (codigo, nome, valorHora) values (4, 'Ligeiro passageiros', 16);
 
-INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('13', 'Pedro', 'Cardoso' , 'masculino','pedrocardoso@gmail.com','800','2/1/1993' ),
+insert into tipoveiculo (codigo, nome, valorHora) values (5, 'Pesado passageiros', 10);
 
-INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('14', 'Joel', 'Costa' , 'masculino','joelcosta@gmail.com','600','7/10/1998' ),
+### Tabela Veiculos
 
-INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('15', 'Tatiana', 'Barbosa' , 'feminino','tatianabarbosa@gmail.com','650','15/9/1982' ),
+insert into veiculos (matricula, modelo, codigo) values (1, 1, 1);
 
-INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('16', 'Tiago', 'Teixeira' , 'masculino','tiagoteixeirinha@gmail.com','800','10/4/1995' ),
+insert into veiculos (matricula, modelo, codigo) values (2, 3, 2);
 
-INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('17', 'Rafael', 'Goncalves' , 'masculino','rafagoncalves@gmail.com','800','18/3/1990' ),
+insert into veiculos (matricula, modelo, codigo) values (3, 2, 3);
 
-INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('18', 'César', 'Novais' , 'masculino','cesarn@gmail.com','600','17/8/1993' ),
+insert into veiculos (matricula, modelo, codigo) values (4, 4, 4);
 
-INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('19', 'Sara', 'Miranda' , 'feminino','saramiranda@gmail.com','700','1/1/1984' ),
+insert into veiculos (matricula, modelo, codigo) values (5, 5, 5);
 
-INSERT INTO `funcionario` (nic, primeiroNome, ultimoNome, sexo, endereco, salario, dataNascimento) VALUES ('20', 'Gustavo', 'Assunção' , 'masculino','gustavoassuncao@gmail.com','700','25/4/1975' ),
+insert into veiculos (matricula, modelo, codigo) values (6, 5, 1);
+
+insert into veiculos (matricula, modelo, codigo) values (7, 5, 2);
+
+insert into veiculos (matricula, modelo, codigo) values (8, 3, 3);
+
+insert into veiculos (matricula, modelo, codigo) values (9, 1, 4);
+
+insert into veiculos (matricula, modelo, codigo) values (10, 3, 5);
+
+### Tabela Servico
+
+insert into servico (valor, nDias) values (10, 3);
+
+insert into servico (valor, nDias) values (12, 4);
+
+insert into servico (valor, nDias) values (15, 6);
+
+insert into servico (valor, nDias) values (17, 8);
+
+insert into servico (valor, nDias) values (4, 1);
+
+insert into servico (valor, nDias) values (7, 9);
+
+insert into servico (valor, nDias) values (15, 15);
+
+### Tabela codigoPostais
+
+insert into codigopostais (codigoPostal, localidade) values (10, 'Mariz');
+
+insert into codigopostais (codigoPostal, localidade) values (20, 'Perelhal');
+
+insert into codigopostais (codigoPostal, localidade) values (30, 'Cossourado');
+
+insert into codigopostais (codigoPostal, localidade) values (40, 'Vila Frescainha');
+
+insert into codigopostais (codigoPostal, localidade) values (50, 'Creixomil');
+
+insert into codigopostais (codigoPostal, localidade) values (60, 'São Pedro');
+
+insert into codigopostais (codigoPostal, localidade) values (70, 'Vila Boa');
+
+insert into codigopostais (codigoPostal, localidade) values (80, 'Esposende');
+
+insert into codigopostais (codigoPostal, localidade) values (90, 'Fão');
+
+insert into codigopostais (codigoPostal, localidade) values (100, 'Roriz');
 
 ### Tabela Cliente
 
-INSERT INTO `cliente` (nic, telefone, email, cartaconducao, primeironome, ultimonome) VALUES ('960500001', 'joseantonio@hotmail.com','100000001', 'José', 'Antonio'),
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Lanae', 'Churly', '9642973901', '3083748920', 'lchurly0@wikia.com', 50);
 
-INSERT INTO `cliente` (nic, telefone, email, cartaconducao, primeironome, ultimonome) VALUES ('960300002', 'amonteiro@gmail.com','100500002', 'Augusto', 'Monteiro'),
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Farra', 'Dupey', '9208776387', '9725623804', 'fdupey1@ted.com', 30);
 
-INSERT INTO `cliente` (nic, telefone, email, cartaconducao, primeironome, ultimonome) VALUES ('960200003', 'arnaldocosta@gmail.com','100040003', 'Arnaldo', 'Costa'),
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Tomas', 'Shilburne', '1108237576', '6265351275', 'tshilburne2@cmu.edu', 70);
 
-INSERT INTO `cliente` (nic, telefone, email, cartaconducao, primeironome, ultimonome) VALUES ('960000504', 'pteixeira@hotmail.com','100000704', 'Pedro', 'Teixeira'),
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Ephrem', 'Pauleit', '2997896533', '1595456694', 'epauleit3@cmu.edu', 70);
 
-INSERT INTO `cliente` (nic, telefone, email, cartaconducao, primeironome, ultimonome) VALUES ('960060005', 'jojoteixeira@gmail.com','100009005', 'Joana', 'Amaro'),
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Lucais', 'Schwanden', '1099724341', '3449090548', 'lschwanden4@so-net.ne.jp', 100);
 
-INSERT INTO `cliente` (nic, telefone, email, cartaconducao, primeironome, ultimonome) VALUES ('960070006', 'joaquimal@gmail.com','160008006', 'Joaquim', 'Alberto'),
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Cozmo', 'Farnall', '6052349581', '6599863239', 'cfarnall5@ning.com', 30);
 
-INSERT INTO `cliente` (nic, telefone, email, cartaconducao, primeironome, ultimonome) VALUES ('960090007', 'anibalfernandes@gmail.com','100050007', 'Anibal', 'Fernandes'),
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Dalton', 'Lineen', '3827645719', '5366986709', 'dlineen6@last.fm', 70);
 
-INSERT INTO `cliente` (nic, telefone, email, cartaconducao, primeironome, ultimonome) VALUES ('960100008', 'xaviera@gmail.com','103000008', 'Xavier', 'Angélico'),
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Sheelah', 'Wille', '7298622935', '1046526645', 'swille7@unicef.org', 40);
 
-INSERT INTO `cliente` (nic, telefone, email, cartaconducao, primeironome, ultimonome) VALUES ('960003009', 'catarinabarbosa@hotmail.com','100040009', 'Catarina','Barbosa'),
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Harri', 'Krale', '3603593774', '4229671895', 'hkrale8@t.co', 30);
 
-INSERT INTO `cliente` (nic, telefone, email, cartaconducao, primeironome, ultimonome) VALUES ('964000010', 'dcardoso@gmail.com','102000010', 'Daniela','Cardoso'),
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Cherry', 'Hunnaball', '7710629121', '9493371911', 'chunnaball9@tuttocitta.it', 90);
 
-### Tabela alugar
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Marris', 'I''anson', '5466443417', '2385750115', 'miansona@pen.io', 70);
 
-INSERT INTO `alugar` (codigo, datainicial, datafinal, custo, caucao) VALUES ('5/7/2022', '10/7/2022', '200', '15'),
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Devlin', 'Wigan', '8947316237', '7738161972', 'dwiganb@myspace.com', 20);
 
-INSERT INTO `alugar` (codigo, datainicial, datafinal, custo, caucao) VALUES ('13/7/2022', '20/7/2022', '300', '25'),
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Arabelle', 'Batcheldor', '2417746549', '3017144192', 'abatcheldorc@rambler.ru', 100);
 
-INSERT INTO `alugar` (codigo, datainicial, datafinal, custo, caucao) VALUES ('17/7/2022', '24/7/2022', '350', '20'),
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Charita', 'Phillps', '0306185318', '3788924268', 'cphillpsd@fema.gov', 100);
 
-INSERT INTO `alugar` (codigo, datainicial, datafinal, custo, caucao) VALUES ('25/7/2022', '2/8/2022', '400', '30'),
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Jo-anne', 'Lloyd-Williams', '6130095597', '1033167154', 'jlloydwilliamse@barnesandnoble.com', 30);
 
-INSERT INTO `alugar` (codigo, datainicial, datafinal, custo, caucao) VALUES ('29/7/2022', '8/8/2022', '600', '35'),
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Harwilll', 'Blenkharn', '0824610040', '4116700808', 'hblenkharnf@businessweek.com', 100);
 
-### Tabela filial
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Katrinka', 'McGuggy', '9953867879', '7007823382', 'kmcguggyg@npr.org', 10);
 
-INSERT INTO `filial` (numero, codigopostal, localidade, rua, porta) VALUES ('1', '4400-395', 'VilaNovaDeGaia', 'rua Antonio Ferreira', '25'),
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Grace', 'Pays', '2165003059', '8394984583', 'gpaysh@bigcartel.com', 80);
 
-INSERT INTO `filial` (numero, codigopostal, localidade, rua, porta) VALUES ('2', '4000-35', 'Porto', 'rua Ruben Castro', '10'),
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Karie', 'Hemerijk', '0756837715', '8635506363', 'khemerijki@liveinternet.ru', 80);
 
-INSERT INTO `filial` (numero, codigopostal, localidade, rua, porta) VALUES ('3', '4700-200', 'Braga', 'rua Pessoa', '5'),
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Janka', 'Dunston', '9320060320', '5658585669', 'jdunstonj@last.fm', 30);
 
-INSERT INTO `filial` (numero, codigopostal, localidade, rua, porta) VALUES ('4', '2400-395', 'Leria', 'rua Miranda', '30'),
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Annnora', 'Bontein', '7583265967', '8902185542', 'abonteink@exblog.jp', 20);
 
-INSERT INTO `filial` (numero, codigopostal, localidade, rua, porta) VALUES ('5', '8000-395', 'Faro', 'rua Isabel Sousa', '50'),
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Mallory', 'Withinshaw', '3810397628', '3466082285', 'mwithinshawl@engadget.com', 70);
 
-INSERT INTO `filial` (numero, codigopostal, localidade, rua, porta) VALUES ('6', '1000-395', 'Lisboa', 'rua Pinheiro bravo', '40'),
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Charyl', 'Andover', '6745494736', '2563217105', 'candoverm@gnu.org', 30);
 
-INSERT INTO `filial` (numero, codigopostal, localidade, rua, porta) VALUES ('7', '5300-395', 'Bragança', 'rua de bustes', '75'),
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Delaney', 'Braunton', '6361585034', '5374516691', 'dbrauntonn@usda.gov', 70);
 
-INSERT INTO `filial` (numero, codigopostal, localidade, rua, porta) VALUES ('8', '7300-395', 'Portalegre', 'rua Orlando texeira', '60'),
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Anjela', 'Chettle', '3816701035', '6174769129', 'achettleo@psu.edu', 40);
 
-INSERT INTO `filial` (numero, codigopostal, localidade, rua, porta) VALUES ('9', '7000-395', 'Évora', 'rua Arlindo fonseca', '3'),
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Adaline', 'Wait', '7307152983', '7075106832', 'awaitp@phpbb.com', 20);
 
-### Tabela TipoVeiculo
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Norrie', 'Chamberlayne', '3359943732', '6004386687', 'nchamberlayneq@trellian.com', 30);
 
-INSERT INTO `TipoVeiculo` (codigo, nome, valorHora) VALUES ('1', transportepessoas, 15/h),
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Casper', 'Shearme', '0539490717', '9541001522', 'cshearmer@globo.com', 30);
 
-INSERT INTO `TipoVeiculo` (codigo, nome, valorHora) VALUES ('2', transportemercadoria, 30/h),
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Davida', 'Rathe', '0433482737', '8159417433', 'drathes@tuttocitta.it', 100);
 
-INSERT INTO `TipoVeiculo` (codigo, nome, valorHora) VALUES ('3', transportemercadoria, 10/h),
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Lester', 'Hardinge', '5744606289', '2251958555', 'lhardinget@imageshack.us', 50);
 
-INSERT INTO `TipoVeiculo` (codigo, nome, valorHora) VALUES ('4', transportepessoas, 20/h),
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Happy', 'Wearden', '9179691196', '1526177953', 'hweardenu@cnbc.com', 40);
+
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Dalli', 'Parradine', '9383894016', '1095194693', 'dparradinev@technorati.com', 80);
+
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Alejandra', 'Powder', '7674181693', '7679409628', 'apowderw@123-reg.co.uk', 70);
+
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Darline', 'Ambroz', '1953735665', '2274237427', 'dambrozx@simplemachines.org', 90);
+
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Hilton', 'Taaffe', '5478089052', '9668084654', 'htaaffey@bluehost.com', 80);
+
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Hart', 'Hambling', '7626680030', '8032419357', 'hhamblingz@businessinsider.com', 20);
+
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Marcos', 'Ferrie', '2571326589', '8894376619', 'mferrie10@networksolutions.com', 60);
+
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Marcos', 'Pursglove', '3364029156', '9786161652', 'mpursglove11@uiuc.edu', 90);
+
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Nicolea', 'Rameaux', '1589241010', '3117469784', 'nrameaux12@narod.ru', 70);
+
+insert into cliente (primeiroNome, ultimoNome, cartaConduçao, telefone, email, codigoPostal) values ('Stefanie', 'Philbrook', '6877245369', '9629087528', 'sphilbrook13@issuu.com', 70);
 
 ### Tabela Departamento
 
-INSERT INTO `departamento` (codigopostal, localidade , rua, porta) VALUES ('4200-200', 'Porto', 'rua Jose pereira', '20'),
+insert into Departamento (rua, porta, codigoPostal) values ('Anhalt', '07503', 60);
 
-INSERT INTO `departamento` (codigopostal, localidade , rua, porta) VALUES ('2000-100', 'Lisboa', 'rua Amaro fernandes', '50'),
+insert into Departamento (rua, porta, codigoPostal) values ('Montana', '8', 30);
 
-### Tabela Veiculo
+insert into Departamento (rua, porta, codigoPostal) values ('Vahlen', '4620', 50);
 
-INSERT INTO `veiculo` (matricula, marca, modelo) VALUES ('N4FG85', 'Audi', 'A2'),
+insert into Departamento (rua, porta, codigoPostal) values ('Brentwood', '07', 30);
 
-INSERT INTO `veiculo` (matricula, marca, modelo) VALUES ('N4FG85', 'Mercedes', 'Classe A'),
+insert into Departamento (rua, porta, codigoPostal) values ('Eagle Crest', '321', 80);
 
-INSERT INTO `veiculo` (matricula, marca, modelo) VALUES ('N4FG85', 'Fiat', '500'),
+insert into Departamento (rua, porta, codigoPostal) values ('Brown', '54185', 100);
 
-INSERT INTO `veiculo` (matricula, marca, modelo) VALUES ('N4FG85', 'Renault', 'Clio'),
+insert into Departamento (rua, porta, codigoPostal) values ('Caliangt', '82', 10);
 
-INSERT INTO `veiculo` (matricula, marca, modelo) VALUES ('N4FG85', 'Peugeot', '2008'),
+insert into Departamento (rua, porta, codigoPostal) values ('Forest Dale', '0', 50);
 
-INSERT INTO `veiculo` (matricula, marca, modelo) VALUES ('N4FG85', 'Mini', 'Cooper'),
+insert into Departamento (rua, porta, codigoPostal) values ('Barby', '5', 60);
 
-INSERT INTO `veiculo` (matricula, marca, modelo) VALUES ('N4FG85', 'Audi', 'A4'),
+insert into Departamento (rua, porta, codigoPostal) values ('Monica', '6', 40);
 
-INSERT INTO `veiculo` (matricula, marca, modelo) VALUES ('N4FG85', 'BMW', 'X2'),
+insert into Departamento (rua, porta, codigoPostal) values ('Toban', '2258', 50);
 
-### Tabela Serviço
+insert into Departamento (rua, porta, codigoPostal) values ('Golf Course', '469', 50);
 
-INSERT INTO `serviço` (idservico, valor, ndias) VALUES ('500', '10'),
+insert into Departamento (rua, porta, codigoPostal) values ('Rockefeller', '5', 70);
 
-INSERT INTO `serviço` (idservico, valor, ndias) VALUES ('300', '5'),
+insert into Departamento (rua, porta, codigoPostal) values ('Moland', '966', 30);
 
-INSERT INTO `serviço` (idservico, valor, ndias) VALUES ('700', '15'),
+insert into Departamento (rua, porta, codigoPostal) values ('Havey', '86127', 50);
 
-INSERT INTO `serviço` (idservico, valor, ndias) VALUES ('200', '4'),
+insert into Departamento (rua, porta, codigoPostal) values ('Thackeray', '4', 80);
 
-INSERT INTO `serviço` (idservico, valor, ndias) VALUES ('500', '8'),
+insert into Departamento (rua, porta, codigoPostal) values ('Chive', '977', 60);
 
-INSERT INTO `serviço` (idservico, valor, ndias) VALUES ('800', '18'),
+insert into Departamento (rua, porta, codigoPostal) values ('Hudson', '6', 50);
 
-INSERT INTO `serviço` (idservico, valor, ndias) VALUES ('250', '4'),
+insert into Departamento (rua, porta, codigoPostal) values ('Carpenter', '5388', 20);
 
-INSERT INTO `serviço` (idservico, valor, ndias) VALUES ('300', '7'),
+insert into Departamento (rua, porta, codigoPostal) values ('International', '3', 20);
 
-INSERT INTO `serviço` (idservico, valor, ndias) VALUES ('450', '10'),
+insert into Departamento (rua, porta, codigoPostal) values ('Beilfuss', '3', 70);
 
-INSERT INTO `serviço` (idservico, valor, ndias) VALUES ('400', '9'),
+insert into Departamento (rua, porta, codigoPostal) values ('Algoma', '397', 10);
+
+insert into Departamento (rua, porta, codigoPostal) values ('Columbus', '80', 50);
+
+insert into Departamento (rua, porta, codigoPostal) values ('Towne', '55590', 80);
+
+insert into Departamento (rua, porta, codigoPostal) values ('Morning', '830', 30);
+
+insert into Departamento (rua, porta, codigoPostal) values ('Pennsylvania', '8577', 50);
+
+insert into Departamento (rua, porta, codigoPostal) values ('Dexter', '96044', 90);
+
+insert into Departamento (rua, porta, codigoPostal) values ('Luster', '20479', 80);
+
+insert into Departamento (rua, porta, codigoPostal) values ('American Ash', '628', 10);
+
+insert into Departamento (rua, porta, codigoPostal) values ('Graedel', '06427', 30);
 
 
 ---
