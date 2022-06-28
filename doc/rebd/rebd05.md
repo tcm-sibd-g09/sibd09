@@ -1058,12 +1058,30 @@ insert into alugar (dataInicial, dataFinal, custo, caucao, nicCliente, idServico
 
 
 
-### Menciona todos os números de telefone dos clientes
 
-Select telefone
-from cliente;
+### Seleciona todos os números de telefone dos clientes
 
-### Menciona todos os números de telefone dos clientes
+Select telefone from cliente;
+
+
+### Seleciona todas as portas de filial cujo número é inferior a 70.
+
+Select porta from filial where porta > 70
+
+
+### Seleciona todos os funcionários do departamento 5 e as suas informações(nic,primeiroNome,ultimoNome,salario)
+
+Select fun.nic, fun.primeiroNome,fun.ultimoNome,fun.salario from departamento dep,Funcionario fun where dep.codigo= fun.codigoDepartamento and dep.codigo=5;
+
+
+### Selecionar informações dos fuuncionários cujo nome começam em "C".
+
+Select primeiroNome,ultimoNome,salario from funcionario where primeiroNome like 'C%';
+
+
+### Selecionar dados de aluguer efetuados cujo custo tenha sido acima de 50 euros entre as filiais 1 e 2.
+
+Select a.nicCliente,a.dataInicial,dataFinal,a.custo,f.numero from alugar a, filial f where a.codigoFilial=f.numero and a.custo>50 and f.numero=1 or f.numero=2;
 
 
 
