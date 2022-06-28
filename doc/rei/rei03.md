@@ -12,16 +12,16 @@ Serviço aluguer de carros (caução, tipo de veiculo, a marca, o local, o nº d
 
 Serviço de transporte (valor fixo, tipo de veiculo, o tipo de transporte, inicio e fim do serviço, o valor a pagar)
 
-Empregado (Nome (Primeiro e Ultimo), número CC, endereço, salário, sexo, data de nascimento)
+Funcionário (Nome (Primeiro e Ultimo), número CC, endereço, salário, sexo, data de nascimento)
 
 Cliente (Nome (Primeiro e Ultimo), número do CC, carta de condução, email, nº de telefone)
 
 
 Associações:
 
-Pertence (empregado, departamento) N:1
+Pertence (Funcionário, departamento) N:1
 
-TrabalhaNuma (empregado, filial) N:1
+TrabalhaNuma (Funcionário, filial) N:1
 
 
 
