@@ -18,19 +18,44 @@ COLLATE = utf8mb4_0900_ai_ci;
 
 
 -- -----------------------------------------------------
+-- Table `sibd09`.`departamento`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `sibd09`.`departamento` (
+  `codigo` INT NOT NULL AUTO_INCREMENT,
+  `rua` VARCHAR(100) NOT NULL,
+  `porta` INT NOT NULL,
+  `codigoPostal` INT NOT NULL,
+  PRIMARY KEY (`codigo`),
+  INDEX `codigoPostal_idx` (`codigoPostal` ASC) VISIBLE,
+  CONSTRAINT `codigoPostal`
+    FOREIGN KEY (`codigoPostal`)
+    REFERENCES `sibd09`.`codigopostais` (`codigoPostal`))
+ENGINE = InnoDB
+AUTO_INCREMENT = 31
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
+
+
+-- -----------------------------------------------------
 -- Table `sibd09`.`filial`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `sibd09`.`filial` (
-  `numero` INT NOT NULL,
+  `numero` INT NOT NULL AUTO_INCREMENT,
   `rua` VARCHAR(100) NOT NULL,
   `porta` INT NOT NULL,
   `codigoPostalFilial` INT NOT NULL,
+  `codigoDepartamento` INT NOT NULL,
   PRIMARY KEY (`numero`),
   INDEX `codigoPostalFilial_idx` (`codigoPostalFilial` ASC) VISIBLE,
+  INDEX `codFilial_idx` (`codigoDepartamento` ASC) VISIBLE,
+  CONSTRAINT `codFilial`
+    FOREIGN KEY (`codigoDepartamento`)
+    REFERENCES `sibd09`.`departamento` (`codigo`),
   CONSTRAINT `codigoPostalFilial`
     FOREIGN KEY (`codigoPostalFilial`)
     REFERENCES `sibd09`.`codigopostais` (`codigoPostal`))
 ENGINE = InnoDB
+AUTO_INCREMENT = 61
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -44,6 +69,7 @@ CREATE TABLE IF NOT EXISTS `sibd09`.`servico` (
   `nDias` INT NOT NULL,
   PRIMARY KEY (`idServico`))
 ENGINE = InnoDB
+AUTO_INCREMENT = 8
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -104,8 +130,14 @@ CREATE TABLE IF NOT EXISTS `sibd09`.`cliente` (
   `cartaConduçao` BIGINT NOT NULL,
   `telefone` BIGINT NOT NULL,
   `email` VARCHAR(100) NOT NULL,
-  PRIMARY KEY (`nic`))
+  `codigoPostal` INT NOT NULL,
+  PRIMARY KEY (`nic`),
+  INDEX `codPostal_idx` (`codigoPostal` ASC) VISIBLE,
+  CONSTRAINT `codPostal`
+    FOREIGN KEY (`codigoPostal`)
+    REFERENCES `sibd09`.`codigopostais` (`codigoPostal`))
 ENGINE = InnoDB
+AUTO_INCREMENT = 41
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -141,24 +173,7 @@ CREATE TABLE IF NOT EXISTS `sibd09`.`alugar` (
     FOREIGN KEY (`nicCliente`)
     REFERENCES `sibd09`.`cliente` (`nic`))
 ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
-
-
--- -----------------------------------------------------
--- Table `sibd09`.`departamento`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `sibd09`.`departamento` (
-  `codigo` INT NOT NULL AUTO_INCREMENT,
-  `rua` VARCHAR(100) NOT NULL,
-  `porta` INT NOT NULL,
-  `codigoPostal` INT NOT NULL,
-  PRIMARY KEY (`codigo`),
-  INDEX `codigoPostal_idx` (`codigoPostal` ASC) VISIBLE,
-  CONSTRAINT `codigoPostal`
-    FOREIGN KEY (`codigoPostal`)
-    REFERENCES `sibd09`.`codigopostais` (`codigoPostal`))
-ENGINE = InnoDB
+AUTO_INCREMENT = 121
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -167,7 +182,7 @@ COLLATE = utf8mb4_0900_ai_ci;
 -- Table `sibd09`.`funcionario`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `sibd09`.`funcionario` (
-  `nic` INT NOT NULL,
+  `nic` INT NOT NULL AUTO_INCREMENT,
   `primeiroNome` VARCHAR(100) NOT NULL,
   `ultimoNome` VARCHAR(100) NOT NULL,
   `endereco` VARCHAR(100) NOT NULL,
@@ -175,20 +190,25 @@ CREATE TABLE IF NOT EXISTS `sibd09`.`funcionario` (
   `salario` DECIMAL(10,2) NOT NULL,
   `sexo` VARCHAR(100) NOT NULL,
   `codigoDepartamento` INT NOT NULL,
-  `numeroFilial` INT NOT NULL,
+  `codigoFilial` INT NOT NULL,
   PRIMARY KEY (`nic`),
   INDEX `codigoDepartamento_idx` (`codigoDepartamento` ASC) VISIBLE,
-  INDEX `numeroFilial_idx` (`numeroFilial` ASC) VISIBLE,
+  INDEX `codigoFilial_idx` (`codigoFilial` ASC) VISIBLE,
   CONSTRAINT `codigoDepartamento`
     FOREIGN KEY (`codigoDepartamento`)
     REFERENCES `sibd09`.`departamento` (`codigo`),
-  CONSTRAINT `numeroFilial`
-    FOREIGN KEY (`numeroFilial`)
+  CONSTRAINT `codigoFilial2`
+    FOREIGN KEY (`codigoFilial`)
     REFERENCES `sibd09`.`filial` (`numero`))
 ENGINE = InnoDB
+AUTO_INCREMENT = 121
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
 
 ## DML
