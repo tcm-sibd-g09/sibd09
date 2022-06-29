@@ -40,7 +40,7 @@ Pode(cliente,alugar) 1:N
 TipoVeículo(veiculo,alguar)1:N
 
 
-###DIAGRAMA 
+### DIAGRAMA 
 
 
 ![InstantCar](https://user-images.githubusercontent.com/96230913/174440125-1e7a643a-90ba-4ca7-9ff5-08d8f7098bee.png)
