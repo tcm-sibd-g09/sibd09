@@ -33,8 +33,11 @@ Escolha (VEICULO, TIPOVEICULO) N:1 T/P
 
 TipoDeServiço(SERVIÇO, ALUGAR) 1:N P/P
 
-TrabalhaEm (DEPARTAMENTO, FUNCIONÁRIO) 1:N P/T
+TrabalhaEm(FUNCIONÁRIO,DEPARTAMENTO) N:1
 
+Pode(cliente,alugar) 1:N
+
+TipoVeículo(veiculo,alguar)1:N
 DIAGRAMA 
 
 
