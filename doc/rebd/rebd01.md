@@ -16,7 +16,7 @@ Cada cliente necessita de indicar o nome (primeiro e último), nic atribuido, a 
 
 ## Descrição dos requisitos do utilizador
 
-O gerente vai ser quem gere o stock de veiculos podendo adicionar/remover a quantidade de veiculos disponiveis.  
+O gerente vai ser quem gere o stock de veículos podendo adicionar/remover a quantidade de veíulos disponíeis.  
 
 E a disponibilidade de agenda do seu departamento podendo alterar o seu estado.
 
