@@ -47,7 +47,7 @@ TipoVeículo(veiculo, alugar)1:N
 
 ### DIAGRAMA 
 
-![Diagrama1](https://user-images.githubusercontent.com/96230913/171955084-6d0b55c6-be83-45d4-86d6-e53636172a87.png)
+![InstantCar](https://user-images.githubusercontent.com/96230913/174440125-1e7a643a-90ba-4ca7-9ff5-08d8f7098bee.png)
 
 
 
