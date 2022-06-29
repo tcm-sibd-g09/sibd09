@@ -46,7 +46,7 @@ VaiSer(Serviço, Alugar) 1:N P/P
 
 ### DIAGRAMA 
 
- ![Diagrama1](https://user-images.githubusercontent.com/InstantCar.png)
+![Diagrama1](https://user-images.githubusercontent.com/96230913/171955084-6d0b55c6-be83-45d4-86d6-e53636172a87.png)
 
 
 
