@@ -47,19 +47,19 @@ MODELOS (<ins>modelo</ins>, marca)
 
 ### Passo 4: Associações N:M
 
-Não existe
+Não existem
 
 ### Passo 5: Atributo Multivalor
 
-Não existe Atributos Multivalor
+Não existem Atributos Multivalor
 
 ### Passo 6: Associação ternária
 
-Não existe associações ternárias
+Não existem associações ternárias
 
 ### Passo 7: Entidades Fracas
 
-Não existe Entidades Fracas
+Não existem Entidades Fracas
 
 
 ## Relações
