@@ -27,19 +27,17 @@ Veiculos( matricula, modelo, codigo)
 
 ### Associações:
 
-TrabalhaEm(Funcionário, Departamento) N:1
+TrabalhaEm(Funcionário, Departamento) N:1 T/P
 
-TrabalhaPara(Funcionário, Filial) N:1
+TrabalhaPara(Funcionário, Filial) N:1 T/P
 
-Vai(Cliente, Alugar) 1:N
+Vai(Cliente, Alugar) 1:N P/T
 
-EstaEstacionado(Veiculo, Filial) N:1
+EstaEstacionado(Veiculo, Filial) N:1 P/T
 
-Apoiado(Filial, Departamento) N:1
+Apoiado(Filial, Departamento) N:1 T/T
 
-VaiSer(Serviço, Alugar) 1:N
-
-Atribuido(Veiculo, Serviço) 1:1
+VaiSer(Serviço, Alugar) 1:N P/P
 
 
 
