@@ -23,18 +23,23 @@ SERVIÇO (idserviço, valor, ndias)
 
 ### Associações:
 
-TrabalhaEm(Funcionário, Departamento) N:1 T/P
+Levantar (ALUGAR, FILIAL) N:1 P/P
 
-TrabalhaPara(Funcionário, Filial) N:1 T/P
+Trabalha (FILIAL, FUNCIONÁRIO) 1:N P/T
 
-Vai(Cliente, Alugar) 1:N P/T
+Entregar (ALUGAR, FILIAL) N:1 P/P
 
-EstaEstacionado(Veiculo, Filial) N:1 P/T
+Estacionado (VEICULO, FILIAL) N:1 P/T
 
-Apoiado(Filial, Departamento) N:1 T/T
+Escolha (VEICULO, TIPOVEICULO) N:1 T/P
 
-VaiSer(Serviço, Alugar) 1:N P/P
+TipoDeServiço(SERVIÇO, ALUGAR) 1:N P/P
 
+TrabalhaEm(FUNCIONÁRIO,DEPARTAMENTO) N:1
+
+Pode(cliente,alugar) 1:N
+
+TipoVeículo(veiculo,alguar)1:N DIAGRAMA
 
 
 
