@@ -27,19 +27,19 @@ Veiculos( matricula, modelo, codigo)
 
 ### Associações:
 
-Pertence(Funcionário, Departamento) N:1
+TrabalhaEm(Funcionário, Departamento) N:1
 
-TrabalhaNuma(Funcionário, Filial) N:1
+TrabalhaPara(Funcionário, Filial) N:1
 
 Vai(Cliente, Alugar) 1:N
 
 EstaEstacionado(Veiculo, Filial) N:1
 
-Tem(Departamento, Filial) 1:N
+Apoiado(Filial, Departamento) N:1
 
 VaiSer(Serviço, Alugar) 1:N
 
-VaoSer(Veiculos, Alugar) 
+Atribuido(Veiculo, Serviço) 1:1
 
 
 
