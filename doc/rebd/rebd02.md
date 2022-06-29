@@ -33,7 +33,7 @@ Escolha (VEICULO, TIPOVEICULO) N:1 T/P
 
 TipoDeServiço(SERVIÇO, ALUGAR) 1:N P/P
 
-TrabalhaEm(FUNCIONÁRIO,DEPARTAMENTO) N:1
+TrabalhaEm(FUNCIONÁRIO,DEPARTAMENTO) N:1 
 
 Pode(cliente,alugar) 1:N
 
