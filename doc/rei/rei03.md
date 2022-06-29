@@ -4,25 +4,21 @@
 
 ### Entidades:
 
-Departamento(codigo, rua, porta, codigoPostal)
+CLIENTE (nic, telefone, email, cartaconducao, nome (primeiro, ultimo))
 
-Funcionário(nic, primeroNome, ultimoNome, endereco, dataNascimento, salario, sexo, codigoDepartamento, codigoFilial)
+ALUGAR (código, datainicial, datafinal, custo, caução)
 
-Alugar (codigo, dataInicial, dataFinal, custo, caucao, nicCliente, idServicoAluguer, matriculaVeiculo, codigoFilial)
+FILIAL (numero, localização(código postal, localidade, rua, porta)
 
-Serviço (idServico, valor, nDias)
+FUNCIONÁRIO (nic, endereço, dn, sexo, nome(primerio, ultimo), salário)
 
-Cliente(nic, primeiroNome, ultimoNome, cartaConducao, telefone, email, codigoPostal)
+TIPOVEICULO(Código, nome, valorHora)
 
-codigoPostais(codigoPostal, localidade)
+DEPARTAMENTO (código, Localização(código postal, localidade, rua, porta))
 
-Filial(numero, rua, porta, codigoPostalFilial, codigoDepartamento)
+VEICULO (matricula, marca, modelo)
 
-Modelos(modelo, marca)
-
-tipoVeiculo(codigo, nome, valorHora)
-
-Veiculos( matricula, modelo, codigo)
+SERVIÇO (idserviço, valor, ndias)
 
 
 ### Associações:
