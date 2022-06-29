@@ -4,28 +4,42 @@
 
 Entidades:
 
-Departamento 
+Departamento(codigo, rua, porta, codigoPostal)
 
-Filial (número, gerente, localização (cidade, rua), nº de empregados)
+Funcionário(nic, primeroNome, ultimoNome, endereco, dataNascimento, salario, sexo, codigoDepartamento, codigoFilial)
 
-Serviço aluguer de carros (caução, tipo de veiculo, a marca, o local, o nº de dias, valor a pagar, data inicial e data final)
+Alugar (codigo, dataInicial, dataFinal, custo, caucao, nicCliente, idServicoAluguer, matriculaVeiculo, codigoFilial)
 
-Serviço de transporte (valor fixo, tipo de veiculo, o tipo de transporte, inicio e fim do serviço, o valor a pagar)
+Serviço (idServico, valor, nDias)
 
-Funcionário (Nome (Primeiro e Ultimo), número CC, endereço, salário, sexo, data de nascimento)
+Cliente(nic, primeiroNome, ultimoNome, cartaConducao, telefone, email, codigoPostal)
 
-Cliente (Nome (Primeiro e Ultimo), número do CC, carta de condução, email, nº de telefone)
+codigoPostais(codigoPostal, localidade)
+
+Filial(numero, rua, porta, codigoPostalFilial, codigoDepartamento)
+
+Modelos(modelo, marca)
+
+tipoVeiculo(codigo, nome, valorHora)
+
+Veiculos( matricula, modelo, codigo)
 
 
 Associações:
 
-Pertence (Funcionário, departamento) N:1
+Pertence(Funcionário, Departamento) N:1
 
-TrabalhaNuma (Funcionário, filial) N:1
+TrabalhaNuma(Funcionário, Filial) N:1
 
+Vai(Cliente, Alugar) 1:N
 
+EstaEstacionado(Veiculo, Filial) N:1
 
-Aluga (Cliente, tipo de serviço) 1:1
+Tem(Departamento, Filial) 1:N
+
+VaiSer(Serviço, Alugar) 1:N
+
+VaoSer(Veiculos, Alugar) 
 
 
 
