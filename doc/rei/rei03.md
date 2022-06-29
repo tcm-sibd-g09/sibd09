@@ -2,7 +2,7 @@
 
 ## Modelo E/A
 
-Entidades:
+# Entidades:
 
 Departamento(codigo, rua, porta, codigoPostal)
 
@@ -25,7 +25,7 @@ tipoVeiculo(codigo, nome, valorHora)
 Veiculos( matricula, modelo, codigo)
 
 
-Associações:
+# Associações:
 
 Pertence(Funcionário, Departamento) N:1
 
